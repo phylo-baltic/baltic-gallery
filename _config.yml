@@ -13,10 +13,8 @@ logo: 'assets/img/logo.png' # change for something you would use. This is from t
 # Author Settings
 author: baltic developments # add your name
 social-twitter: evogytis# add your Twitter handle
-social-facebook: # add
 social-github: phylo-baltic # add your Github handle
-social-linkedin: # add
-social-email: # add
+# social-email: # add
 # Disqus
 discus-identifier: baltic developers # add your discus identifier
 
