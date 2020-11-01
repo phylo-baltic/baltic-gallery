@@ -1,1 +1,51 @@
-theme: jekyll-theme-slate
+# theme: jekyll-theme-slate
+  
+title: baltic - gallery
+description: > # this means to ignore newlines until "baseurl:"
+  A gallery of visualisations made with baltic
+permalink: ':title/'
+baseurl: "/phylo-baltic/baltic-gallery" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+disqus: 'baltic-gallery'
+site-twitter: twitter.com/evogytis
+logo: 'assets/img/logo.png' # change for something you would use. This is from the gallery website
+
+# Author Settings
+author: baltic developments # add your name
+social-twitter: evogytis# add your Twitter handle
+social-facebook: # add
+social-github: phylo-baltic # add your Github handle
+social-linkedin: # add
+social-email: # add
+# Disqus
+discus-identifier: baltic developers # add your discus identifier
+
+# Defaults - gallery
+defaults:
+      
+  # all pages - gallery
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+
+# Tracker
+analytics: # Google Analytics
+
+# Pagination
+paginate: 20
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+  - jekyll-feed
+  - jekyll-seo-tag
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock","README.markdown", "package.json", "grunt.js", "Gruntfile.js", "Gruntfile.coffee", "node_modules"]
