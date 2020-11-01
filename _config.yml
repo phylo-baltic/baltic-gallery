@@ -4,7 +4,7 @@ title: baltic - gallery
 description: > # this means to ignore newlines until "baseurl:"
   A gallery of visualisations made with baltic
 permalink: ':title/'
-baseurl: "/phylo-baltic/baltic-gallery" # the subpath of your site, e.g. /blog
+baseurl: "/baltic-gallery" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 disqus: 'baltic-gallery'
 site-twitter: twitter.com/evogytis
