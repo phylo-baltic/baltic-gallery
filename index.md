@@ -7,7 +7,7 @@ description: "Description"
 <section class="mt-4 mb-5">
     
     <div class="container mb-4">
-        <h1 class="font-weight-bold title">Explore</h1>    
+        <h1 class="font-weight-bold title">Gallery</h1>    
         <div class="row">
         {% include menu-categories.html %}
         </div>
