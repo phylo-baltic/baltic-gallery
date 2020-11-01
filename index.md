@@ -1,7 +1,6 @@
 ---
 layout: main
 ---
-{% calls the posts in \_post and tiles them in a pinterest-like layout%}
 {% for post in paginator.posts %}
 <article class="post">
   {% if post.img %}
