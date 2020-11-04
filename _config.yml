@@ -7,7 +7,7 @@ site-twitter: twitter.com/evogytis
 logo: 'assets/img/logo.png' # change for something you would use. This is from the gallery website
 
 
-include: ["_pages"]
+include: ["_pages","_posts"]
 
 # Author Settings
 author: baltic developments # add your name
