@@ -17,6 +17,12 @@ social-github: phylo-baltic # add your Github handle
 
 # Defaults - gallery
 defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
       
   # all pages - gallery
   - scope:
