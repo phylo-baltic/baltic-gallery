@@ -2,7 +2,8 @@ name: baltic - gallery
 description: 'A gallery of visualisations made with baltic'
 # permalink: ':title/'
 permalink: /:title/
-baseurl: "/baltic-gallery" # the subpath of your site, e.g. /blog
+# baseurl: "/baltic-gallery" # the subpath of your site, e.g. /blog
+baseurl: ""
 site-twitter: twitter.com/evogytis
 logo: 'assets/img/logo.png' # change for something you would use. This is from the gallery website
 
