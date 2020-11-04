@@ -30,8 +30,6 @@ defaults:
     values:
       layout: page
 
-# Tracker
-analytics: # Google Analytics
 
 # Pagination
 paginate: 20
