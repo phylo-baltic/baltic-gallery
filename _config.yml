@@ -45,7 +45,4 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-paginate: 8
-paginate_path: "/page/:num"
-
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
