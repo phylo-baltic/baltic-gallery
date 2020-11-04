@@ -1,13 +1,13 @@
 ---
-title: "baltic - gallery"
+title: "Cobi Archive"
 layout: default
-description: "Description"
+description: "A Collection that tries to keep track of all Cobi Toys."
 ---
 
 <section class="mt-4 mb-5">
     
     <div class="container mb-4">
-        <h1 class="font-weight-bold title">Gallery</h1>    
+        <h1 class="font-weight-bold title">Explore</h1>    
         <div class="row">
         {% include menu-categories.html %}
         </div>
