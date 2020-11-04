@@ -1,7 +1,7 @@
 ---
-title: "Cobi Archive"
+title: "baltic gallery"
 layout: default
-description: "A Collection that tries to keep track of all Cobi Toys."
+description: "Gallery of phylogenetic visualisations"
 ---
 
 <section class="mt-4 mb-5">
