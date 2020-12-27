@@ -52,9 +52,7 @@ ax.set_yticklabels([])
 
 plt.show()
 ```
-{::nomarkdown} {% jupyter_notebook "/notebooks/test_jp_nb.mb" %} {:/nomarkdown} 
-
-
+{% jupyter_notebook "/notebooks/test_jp_nb.mb" %}
 ---
 
 Attribution-ShareAlike 4.0 International
