@@ -8,6 +8,8 @@ visit: "https://github.com/evogytis/baltic/blob/master/docs/notebooks/austechia.
 
 # Multitype trees
 
+---
+
 baltic now has the ability to deal with multitype trees recovered as part of structured coalescent analyses, which contain nodes with a single child. You can find an example of the files you might find after running a structured coalescent analysis in beast2 [here](https://github.com/Taming-the-BEAST/Structured-coalescent/).
 
 In this particular example, it is possible to plot a tree and colour the different types along the branches to show trait transitions.
@@ -51,5 +53,6 @@ ax.set_yticklabels([])
 plt.show()
 ```
 
+---
 
 Attribution-ShareAlike 4.0 International
