@@ -52,10 +52,7 @@ ax.set_yticklabels([])
 
 plt.show()
 ```
-
-{::nomarkdown}
 {% jupyter_notebook "test_jp_nb.ipynb" %}
-{:/nomarkdown}
 
 
 ---
