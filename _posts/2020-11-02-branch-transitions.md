@@ -53,6 +53,8 @@ ax.set_yticklabels([])
 plt.show()
 ```
 
+{% jupyter_notebook "https://github.com/evogytis/baltic/blob/master/docs/notebooks/austechia.ipynb" %}
+
 ---
 
 Attribution-ShareAlike 4.0 International
