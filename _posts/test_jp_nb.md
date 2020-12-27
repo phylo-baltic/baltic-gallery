@@ -1,4 +1,11 @@
-<a href="https://en.wikipedia.org/wiki/Auk%C5%A1taitija" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/lt/1/18/Aukstaitijosherbas.PNG" alt="IMAGE ALT TEXT HERE" width="480" border="10"/></a>
+---
+title:  "Multytrait tree plots"
+metadate: "hide"
+categories: [ Phylogeny, Traits ]
+image: "/assets/img/reassort.png"
+visit: "https://github.com/evogytis/baltic/blob/master/docs/notebooks/austechia.ipynb"
+---
+
 
 --------------------
 austechia is a Jupyter notebook that provides some example code of how to plot trees imported with baltic.
