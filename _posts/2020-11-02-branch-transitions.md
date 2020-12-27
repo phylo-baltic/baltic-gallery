@@ -52,7 +52,7 @@ ax.set_yticklabels([])
 
 plt.show()
 ```
-{% jupyter_notebook "notebooks/test_jp_nb.ipynb" %}
+{% jupyter_notebook "/notebooks/test_jp_nb.ipynb" %}
 
 
 ---
