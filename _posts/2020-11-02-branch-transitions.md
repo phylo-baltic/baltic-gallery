@@ -54,7 +54,7 @@ plt.show()
 ```
 
 {::nomarkdown}
-{% jupyter_notebook "https://github.com/evogytis/baltic/blob/master/docs/notebooks/austechia.ipynb" %}
+{% jupyter_notebook "test_jp_nb.ipynb" %}
 {:/nomarkdown}
 
 
