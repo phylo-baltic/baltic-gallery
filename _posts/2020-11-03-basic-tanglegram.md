@@ -152,4 +152,7 @@ plt.show()
     iteration 3
     PB1
     PB2  
+
+![png](/assets/notebooks/basic-tanglegram_files/basic-tanglegram_0_1.png)
+
 ---
