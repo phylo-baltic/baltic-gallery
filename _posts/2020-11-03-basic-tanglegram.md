@@ -153,6 +153,8 @@ plt.show()
     PB1
     PB2  
 
-![png](/assets/notebooks/basic-tanglegram_files/basic-tanglegram_0_1.png)
+---
+
+<img src="/assets/notebooks/basic-tanglegram_files/basic-tanglegram_0_1.png" alt="hi" class="inline"/>
 
 ---
