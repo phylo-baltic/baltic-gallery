@@ -2,10 +2,12 @@
 ---
 title:  "Basic Tanglegram"
 metadate: "hide"
-categories: [Tanglegram, Phylogeny]
+categories: [ Tanglegram, Phylogeny ]
 image: "/assets/notebooks/basic-tanglegram_files/basic-tanglegram_0_1.png"
 visit: "https://github.com/evogytis/baltic/blob/master/docs/notebooks/austechia.ipynb"
 ---
+
+# Code to generate a basic tanglegram
 
 ---
 
@@ -150,17 +152,5 @@ plt.show()
     PB2
     iteration 3
     PB1
-    PB2
-
-
-
-    
-![png](basic-tanglegram_files/basic-tanglegram_0_1.png)
-    
-
-
-
-```python
-
-```
+    PB2  
 ---
