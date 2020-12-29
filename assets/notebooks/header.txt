@@ -1,0 +1,7 @@
+---
+title:  "Basic Tanglegram"
+metadate: "hide"
+categories: [Tanglegram, Phylogeny]
+image: "IMAGE_HOLDER"
+visit: "https://github.com/evogytis/baltic/blob/master/docs/notebooks/austechia.ipynb"
+---
