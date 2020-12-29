@@ -19,12 +19,12 @@
         <span class="pinme">
             <a data-pin-do="buttonPin" href="https://www.pinterest.com/pin/create/button/?url={{site.url}}{{site.baseurl}}{{post.url}}&media={{site.url}}{{site.baseurl}}/{{post.image}}&description={{ post.title }} - {{ post.content | strip_html | truncatewords:25 }}"></a>
         </span>
-        -->
+        
          <span class="gotopost">
              <a href="{{site.baseurl}}{{post.url}}" class="text-dark"><i class="fa fa-arrow-circle-right"></i> More
              </a>
          </span> 
-	
+	-->
         <div class="showcat">
             {% for category in post.categories %}
               <a class="btn btn-sm btn-danger mb-1" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">
