@@ -155,6 +155,6 @@ plt.show()
 
 ---
 
-<img src="/assets/notebooks/basic-tanglegram_files/basic-tanglegram_0_1.png"/>
+<img src="{{site.baseurl}}/assets/notebooks/basic-tanglegram_files/basic-tanglegram_0_1.png" alt="tanglegram"/>
 
 ---
