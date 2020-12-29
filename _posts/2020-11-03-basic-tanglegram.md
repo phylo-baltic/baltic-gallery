@@ -1,8 +1,7 @@
-
 ---
-title:  "Basic Tanglegram"
+title:  "Basic tanglegram"
 metadate: "hide"
-categories: [ Tanglegram, Phylogeny ]
+categories: [ Phylogeny, Traits ]
 image: "/assets/notebooks/basic-tanglegram_files/basic-tanglegram_0_1.png"
 visit: "https://github.com/evogytis/baltic/blob/master/docs/notebooks/austechia.ipynb"
 ---
