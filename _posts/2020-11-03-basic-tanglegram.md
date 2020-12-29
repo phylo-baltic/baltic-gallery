@@ -155,6 +155,6 @@ plt.show()
 
 ---
 
-<img src="/assets/notebooks/basic-tanglegram_files/basic-tanglegram_0_1.png" alt="hi" class="inline"/>
+<img src="/assets/notebooks/basic-tanglegram_files/basic-tanglegram_0_1.png"/>
 
 ---
