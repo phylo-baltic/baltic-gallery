@@ -5,7 +5,7 @@ a:hover {
 	text-decoration: none;
 }
 img {
-	max-height: 40%;
+	max-height: 100%;
 }
 a,.a:hover {
 	-webkit-transition:all 0.2s;
