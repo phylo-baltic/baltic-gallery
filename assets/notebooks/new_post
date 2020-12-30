@@ -1,55 +1,25 @@
-function new_post {
-    #change these 3 lines to match your specific setup
-    GH_USER="baltic_website/baltic-gallery"
-    PC_USER="xtorrm"
-    POST_PATH="/mnt/c/Users/${PC_USER}/Documents/${GH_USER}/_posts" # update path when needed
-    IMG_PATH="/mnt/c/Users/${PC_USER}/Documents/${GH_USER}/assets/img"
+#!/usr/bin/bash
 
-    FILE_NAME="$1"
-    CURR_DIR=`pwd`
-    FILE_BASE=`basename $FILE_NAME .ipynb`
+#change these 3 lines to match your specific setup
+GH_USER="baltic_website/baltic-gallery"
+PC_USER="xtorrm"
+POST_PATH="/mnt/c/Users/${PC_USER}/Documents/${GH_USER}/_posts" # update path when needed
+IMG_PATH="/mnt/c/Users/${PC_USER}/Documents/${GH_USER}/assets/img"
+FILE_NAME="$1"
+CURR_DIR=`pwd`
+FILE_BASE=`basename $FILE_NAME .ipynb`
 
-    POST_NAME="${FILE_BASE}.md"
-    POSTHTML_NAME="${FILE_BASE}.html
-    IMG_NAME="${FILE_BASE}_files"
+POSTHTML_NAME="${FILE_BASE}.html"
+POST_DATE_NAME=`date "+%Y-%m-%d-"`${POSTHTML_NAME}
 
-    POST_DATE_NAME=`date "+%Y-%m-%d-"`${POSTHTML_NAME}
+# get header file
+HEADER_FILE="${CURR_DIR}/header.txt"
 
-    # convert the notebook to markdown to generate the folder with images (to get as header later)
-    jupyter nbconvert --to markdown $FILE_NAME
+# create html version of the file
+jupyter nbconvert --to html $FILE_NAME --template lab
 
-    # get header file
-    HEADER_FILE="${CURR_DIR}/header.txt"
+# add header to html file
+cat $HEADER_FILE $POSTHTML_NAME > "${POST_DATE_NAME}"
 
-    # remove the markdown file
-    rm $POST_NAME  
-
-    # create html version of the file
-    jupyter nbconvert --to html $FILE_NAME --template lab
-    
-    # add header to html file
-    cat $HEADER_FILE $POSTHTML_NAME > "${POST_DATE_NAME}"
-
-    # get first image in the folder to place in card and replace the place holder in the header
-    FILES=$(ls ${IMG_NAME} | tail -n 1)
-    sed -i "s/IMAGE_HOLDER/${CURR_DIR}${FILES}/g" $POST_DATE_NAME
-
-    # move everything to blog area
-    mv $POST_DATE_NAME "${POST_PATH}/"
-    
-
-    # add files to git repo to be included in next commit
-    cd $POST_PATH
-    git add $POST_DATE_NAME
-    #cd $IMG_PATH
-    #git add $IMG_NAME
-
-    # make git submission
-    cd ..
-    git commit -m "New blog entry ${FILE_BASE}"
-
-    # push changes to server
-    git push
-
-    cd $CURR_DIR
-}
+# move everything to blog area
+mv $POST_DATE_NAME ${POST_PATH}
