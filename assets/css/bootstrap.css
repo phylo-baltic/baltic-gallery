@@ -5069,7 +5069,8 @@ input[type="button"].btn-block {
 
 /* line 128, node_modules/bootstrap/scss/_card.scss */
 .card-img-top {
-  height: 50%;
+  max-height: 50%;
+  max-width: 50%
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px); }
 
