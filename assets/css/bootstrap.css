@@ -4558,7 +4558,7 @@ input[type="button"].btn-block {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.5rem 1rem; 
-  background-image: url("{{site.baseurl}}/assets/img/logo-banner.png");
+  background-image: url("https://github.com/phylo-baltic/baltic-gallery/blob/gh-pages/assets/img/logo-banner.png");
 }
   /* line 28, node_modules/bootstrap/scss/_navbar.scss */
   .navbar > .container,
