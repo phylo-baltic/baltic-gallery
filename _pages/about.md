@@ -1,7 +1,6 @@
 ---
 title: "About"
 permalink: "/about.html"
-image: "/assets/img/baltic-logo.ico"
 ---
 
 
