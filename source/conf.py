@@ -39,7 +39,7 @@ html_css_files = [
 
 # --- JS: ONLY custom homepage JS, NOTHING from Sphinx/theme -----------------
 html_js_files = [
-    'images-rotate-info.js',
+    'rotator-images.js',
     'js/examples-grid.js',
     'script.js',
 ]
