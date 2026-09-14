@@ -42,6 +42,7 @@ jobs:
           python scripts/sync_upstream_content.py
           python scripts/build_examples.py
           python scripts/build_tutorials.py
+          python scripts/build_rotator_assets.py
           python scripts/build_uses.py
           sphinx-build -b html source build/html
 
