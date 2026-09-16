@@ -2,6 +2,7 @@
   {
     "title": "exploded tree high level",
     "href": "ebola-exploded-tree-high-level.html",
+    "image": "_static/examples/ebola/exploded-tree-high-level.png",
     "tags": [
       "ebola",
       "exploded"
@@ -11,6 +12,7 @@
   {
     "title": "exploded tree low level",
     "href": "ebola-exploded-tree-low-level.html",
+    "image": "_static/examples/ebola/exploded-tree-low-level.png",
     "tags": [
       "ebola",
       "exploded"
@@ -20,6 +22,7 @@
   {
     "title": "height 95HPD bars",
     "href": "ebola-height-95hpd-bars.html",
+    "image": "_static/examples/ebola/height-95HPD-bars.png",
     "tags": [
       "time-scaled",
       "ebola",
@@ -30,6 +33,7 @@
   {
     "title": "simple tree",
     "href": "ebola-simple-tree.html",
+    "image": "_static/examples/ebola/simple-tree.png",
     "tags": [
       "ebola",
       "basic"
@@ -39,6 +43,7 @@
   {
     "title": "state collapsed tree earliest adjust",
     "href": "ebola-state-collapsed-tree-earliest-adjust.html",
+    "image": "_static/examples/ebola/state-collapsed-tree-earliest-adjust.png",
     "tags": [
       "traits",
       "ebola",
@@ -50,6 +55,7 @@
   {
     "title": "state collapsed tree earliest",
     "href": "ebola-state-collapsed-tree-earliest.html",
+    "image": "_static/examples/ebola/state-collapsed-tree-earliest.png",
     "tags": [
       "traits",
       "ebola",
@@ -61,6 +67,7 @@
   {
     "title": "state collapsed tree",
     "href": "ebola-state-collapsed-tree.html",
+    "image": "_static/examples/ebola/state-collapsed-tree.png",
     "tags": [
       "traits",
       "ebola",
@@ -71,6 +78,7 @@
   {
     "title": "tmrca hpd tree",
     "href": "ebola-tmrca-hpd-tree.html",
+    "image": "_static/examples/ebola/tmrca-hpd-tree.png",
     "tags": [
       "time-scaled",
       "ebola",
@@ -82,6 +90,7 @@
   {
     "title": "tangled chain",
     "href": "influenza-b-virus-tangled-chain.html",
+    "image": "_static/examples/influenza-b-virus/tangled-chain.png",
     "tags": [
       "influenza-b",
       "tanglegram"
@@ -91,6 +100,7 @@
   {
     "title": "tree matrix",
     "href": "influenza-b-virus-tree-matrix.html",
+    "image": "_static/examples/influenza-b-virus/tree-matrix.png",
     "tags": [
       "influenza-b",
       "matrix"
@@ -100,6 +110,7 @@
   {
     "title": "exploded tree high level",
     "href": "mers-cov-exploded-tree-high-level.html",
+    "image": "_static/examples/mers-cov/exploded-tree-high-level.png",
     "tags": [
       "mers-cov",
       "exploded"
@@ -109,6 +120,7 @@
   {
     "title": "exploded tree low level",
     "href": "mers-cov-exploded-tree-low-level.html",
+    "image": "_static/examples/mers-cov/exploded-tree-low-level.png",
     "tags": [
       "mers-cov",
       "exploded"
@@ -118,6 +130,7 @@
   {
     "title": "gradient clade",
     "href": "mers-cov-gradient-clade.html",
+    "image": "_static/examples/mers-cov/gradient-clade.png",
     "tags": [
       "traits",
       "mers-cov",
@@ -128,6 +141,7 @@
   {
     "title": "height 95HPD bars",
     "href": "mers-cov-height-95hpd-bars.html",
+    "image": "_static/examples/mers-cov/height-95HPD-bars.png",
     "tags": [
       "time-scaled",
       "mers-cov",
@@ -138,6 +152,7 @@
   {
     "title": "homoplasy tree",
     "href": "mers-cov-homoplasy-tree.html",
+    "image": "_static/examples/mers-cov/homoplasy-tree.png",
     "tags": [
       "traits",
       "mers-cov",
@@ -148,6 +163,7 @@
   {
     "title": "pad nodes",
     "href": "mers-cov-pad-nodes.html",
+    "image": "_static/examples/mers-cov/pad-nodes.png",
     "tags": [
       "mers-cov",
       "spacing",
@@ -158,6 +174,7 @@
   {
     "title": "reduced tree camel",
     "href": "mers-cov-reduced-tree-camel.html",
+    "image": "_static/examples/mers-cov/reduced-tree-camel.png",
     "tags": [
       "mers-cov",
       "reduced"
@@ -167,6 +184,7 @@
   {
     "title": "reduced tree human",
     "href": "mers-cov-reduced-tree-human.html",
+    "image": "_static/examples/mers-cov/reduced-tree-human.png",
     "tags": [
       "mers-cov",
       "reduced"
@@ -176,6 +194,7 @@
   {
     "title": "simple tree",
     "href": "mers-cov-simple-tree.html",
+    "image": "_static/examples/mers-cov/simple-tree.png",
     "tags": [
       "mers-cov",
       "basic"
@@ -185,6 +204,7 @@
   {
     "title": "skygrid calendar time",
     "href": "mers-cov-skygrid-calendar-time.html",
+    "image": "_static/examples/mers-cov/skygrid-calendar-time.png",
     "tags": [
       "time-scaled",
       "mers-cov",
@@ -195,6 +215,7 @@
   {
     "title": "skygrid relative time",
     "href": "mers-cov-skygrid-relative-time.html",
+    "image": "_static/examples/mers-cov/skygrid-relative-time.png",
     "tags": [
       "time-scaled",
       "mers-cov",
@@ -206,6 +227,7 @@
   {
     "title": "state collapsed tree earliest adjust",
     "href": "mers-cov-state-collapsed-tree-earliest-adjust.html",
+    "image": "_static/examples/mers-cov/state-collapsed-tree-earliest-adjust.png",
     "tags": [
       "traits",
       "mers-cov",
@@ -217,6 +239,7 @@
   {
     "title": "state collapsed tree",
     "href": "mers-cov-state-collapsed-tree.html",
+    "image": "_static/examples/mers-cov/state-collapsed-tree.png",
     "tags": [
       "traits",
       "mers-cov",
@@ -229,6 +252,7 @@
   {
     "title": "auspice json io",
     "href": "nextstrain-auspice-json-io.html",
+    "image": "_static/examples/nextstrain/auspice-json-io.png",
     "tags": [
       "nextstrain",
       "json",
@@ -239,6 +263,7 @@
   {
     "title": "nextstrain avian flu tanglegram",
     "href": "nextstrain-nextstrain-avian-flu-tanglegram.html",
+    "image": "_static/examples/nextstrain/nextstrain-avian-flu-tanglegram.png",
     "tags": [
       "nextstrain",
       "influenza-b",
@@ -249,6 +274,7 @@
   {
     "title": "nextstrain flu lineage map",
     "href": "nextstrain-nextstrain-flu-lineage-map.html",
+    "image": "_static/examples/nextstrain/nextstrain-flu-lineage-map.png",
     "tags": [
       "geography",
       "nextstrain",
@@ -261,6 +287,7 @@
   {
     "title": "nextstrain measles map piecharts",
     "href": "nextstrain-nextstrain-measles-map-piecharts.html",
+    "image": "_static/examples/nextstrain/nextstrain-measles-map-piecharts.png",
     "tags": [
       "geography",
       "traits",
@@ -274,6 +301,7 @@
   {
     "title": "nextstrain nipah map piecharts",
     "href": "nextstrain-nextstrain-nipah-map-piecharts.html",
+    "image": "_static/examples/nextstrain/nextstrain-nipah-map-piecharts.png",
     "tags": [
       "geography",
       "traits",
@@ -288,6 +316,7 @@
   {
     "title": "samogitia ebola custom",
     "href": "samogitia-samogitia-ebola-custom.html",
+    "image": "_static/examples/samogitia/samogitia-ebola-custom.png",
     "tags": [
       "histogram",
       "ebola",
@@ -298,6 +327,7 @@
   {
     "title": "samogitia ebola tmrca",
     "href": "samogitia-samogitia-ebola-tmrca.html",
+    "image": "_static/examples/samogitia/samogitia-ebola-tmrca.png",
     "tags": [
       "density",
       "time-scaled",
@@ -310,6 +340,7 @@
   {
     "title": "samogitia rabv trace state",
     "href": "samogitia-samogitia-rabv-trace-state.html",
+    "image": "_static/examples/samogitia/samogitia-rabv-trace-state.png",
     "tags": [
       "states",
       "traits",
@@ -321,6 +352,7 @@
   {
     "title": "Muller plot abstract",
     "href": "sars-cov-2-muller-plot-abstract.html",
+    "image": "_static/examples/sars-cov-2/Muller-plot-abstract.png",
     "tags": [
       "muller",
       "sars-cov-2"
@@ -330,6 +362,7 @@
   {
     "title": "snp alignment",
     "href": "sars-cov-2-snp-alignment.html",
+    "image": "_static/examples/sars-cov-2/snp-alignment.png",
     "tags": [
       "alignment",
       "sars-cov-2",
@@ -340,6 +373,7 @@
   {
     "title": "travel aware tree",
     "href": "sars-cov-2-travel-aware-tree.html",
+    "image": "_static/examples/sars-cov-2/travel-aware-tree.png",
     "tags": [
       "sars-cov-2"
     ],
@@ -348,6 +382,7 @@
   {
     "title": "map tree",
     "href": "wumv-6-map-tree.html",
+    "image": "_static/examples/wumv-6/map-tree.png",
     "tags": [
       "geography",
       "wumv-6",
@@ -359,6 +394,7 @@
   {
     "title": "reassortment network",
     "href": "wumv-6-reassortment-network.html",
+    "image": "_static/examples/wumv-6/reassortment-network.png",
     "tags": [
       "reassortment",
       "wumv-6",
@@ -369,6 +405,7 @@
   {
     "title": "simple tree",
     "href": "wumv-6-simple-tree.html",
+    "image": "_static/examples/wumv-6/simple-tree.png",
     "tags": [
       "wumv-6",
       "basic"
@@ -378,6 +415,7 @@
   {
     "title": "tangled chain",
     "href": "wumv-6-tangled-chain.html",
+    "image": "_static/examples/wumv-6/tangled-chain.png",
     "tags": [
       "reassortment",
       "wumv-6",
@@ -388,6 +426,7 @@
   {
     "title": "tree matrix",
     "href": "wumv-6-tree-matrix.html",
+    "image": "_static/examples/wumv-6/tree-matrix.png",
     "tags": [
       "reassortment",
       "wumv-6",
@@ -398,6 +437,7 @@
   {
     "title": "root to tip",
     "href": "zika-virus-root-to-tip.html",
+    "image": "_static/examples/zika-virus/root-to-tip.png",
     "tags": [
       "root-to-tip",
       "time-scaled",

@@ -1,0 +1,15 @@
+Aligned
+=======
+
+.. raw:: html
+
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../tutorials/basic-tree-aligned-tips.html">
+               <img src="../_static/tutorials/basic-tree-aligned-tips.png" alt="basic tree aligned tips" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../tutorials/basic-tree-aligned-tips.html">basic tree aligned tips</a>
+       </div>
+     </div>
+   </div>

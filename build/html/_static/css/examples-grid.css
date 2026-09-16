@@ -151,6 +151,10 @@
   display: block;
 }
 
+.gallery-card__image-link {
+  display: block;
+}
+
 .gallery-card__imgwrap:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 28px rgba(0,0,0,0.18);
@@ -168,6 +172,11 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  pointer-events: none;
+}
+
+.gallery-card__overlay a {
+  pointer-events: auto;
 }
 
 .gallery-card__imgwrap:hover .gallery-card__overlay {
@@ -176,9 +185,16 @@
 
 .gallery-card__title {
   color: #fff;
+  display: block;
   font-weight: 600;
   text-align: center;
   line-height: 1.2;
+  text-decoration: none;
+}
+
+.gallery-card__title:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .gallery-card__tags {
@@ -191,6 +207,7 @@
 }
 
 .content-tag {
+  text-decoration: none;
   padding: 0.2rem 0.45rem;
   border: 1px solid rgba(255, 255, 255, 0.65);
   border-radius: 999px;
@@ -198,6 +215,11 @@
   font-size: 0.72rem;
   line-height: 1;
   text-transform: capitalize;
+}
+
+.content-tag:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.18);
 }
 
 html[data-theme="dark"] .examples-card {

@@ -34,6 +34,32 @@
   padding-right: 24px;
 }
 
+/* Keep the brand, navigation, and utility controls aligned across every page. */
+.bd-header .navbar-header-items__start,
+.bd-header .navbar-header-items__center,
+.bd-header .navbar-header-items__end {
+  align-items: center;
+}
+
+.bd-header .logo__title {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.bd-header .navbar-header-items__center {
+  margin-right: auto;
+}
+
+.bd-header .navbar-header-items__end {
+  margin-left: 2.5rem;
+  justify-content: flex-end;
+}
+
+.bd-header .navbar-header-items__end .navbar-item + .navbar-item {
+  margin-left: 1rem;
+}
+
 /* Section spacing */
 .section {
   margin-top: 3rem;

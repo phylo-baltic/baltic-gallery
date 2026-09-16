@@ -247,15 +247,17 @@ def write_tutorials_landing(items: list[TutorialItem]) -> None:
         img = item.img_web or "_static/no_image.png"
         cards.append(
             f"""
-<a class="gallery-card" href="{escape(item.html_href, quote=True)}">
+<div class="gallery-card">
   <div class="gallery-card__imgwrap">
-    <img src="{escape(html_src(img), quote=True)}" alt="{escape(item.source_name, quote=True)}" loading="lazy">
+        <a class="gallery-card__image-link" href="{escape(item.html_href, quote=True)}">
+            <img src="{escape(html_src(img), quote=True)}" alt="{escape(item.source_name, quote=True)}" loading="lazy">
+        </a>
     <div class="gallery-card__overlay">
-      <div class="gallery-card__title">{escape(item.title)}</div>
-    <div class="gallery-card__tags">{tag_chips(item.tags)}</div>
+            <a class="gallery-card__title" href="{escape(item.html_href, quote=True)}">{escape(item.title)}</a>
+            <div class="gallery-card__tags">{tag_chips(item.tags)}</div>
     </div>
   </div>
-</a>
+</div>
 """.strip()
         )
 
@@ -324,7 +326,7 @@ def write_manifest(items: list[TutorialItem]) -> None:
     metadata_path = TUTORIALS_DOCS / ".content_items.json"
     metadata_path.write_text(
         json.dumps(
-            [{"title": item.title, "href": item.html_href, "tags": item.tags, "type": "tutorial"} for item in items],
+            [{"title": item.title, "href": item.html_href, "image": item.img_web, "tags": item.tags, "type": "tutorial"} for item in items],
             indent=2,
         )
         + "\n",

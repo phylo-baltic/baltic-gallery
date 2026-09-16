@@ -268,15 +268,17 @@ def write_examples_landing(by_cat: dict[str, list[ExampleItem]], items: list[Exa
             src = escape(html_src(img), quote=True)
             cards.append(
                 f"""
-<a class="gallery-card" href="{href}">
+<div class="gallery-card">
   <div class="gallery-card__imgwrap">
-    <img src="{src}" alt="{alt}" loading="lazy">
+        <a class="gallery-card__image-link" href="{href}">
+            <img src="{src}" alt="{alt}" loading="lazy">
+        </a>
     <div class="gallery-card__overlay">
-      <div class="gallery-card__title">{title}</div>
+            <a class="gallery-card__title" href="{href}">{title}</a>
             <div class="gallery-card__tags">{tag_chips(it.tags)}</div>
     </div>
   </div>
-</a>
+</div>
 """.strip()
             )
 
@@ -358,7 +360,7 @@ def write_manifest(items: list[ExampleItem]) -> None:
     metadata_path = EXAMPLES_DOCS / ".content_items.json"
     metadata_path.write_text(
         json.dumps(
-            [{"title": title_from_stem(item.example_name), "href": item.html_href, "tags": item.tags, "type": "example"} for item in items],
+            [{"title": title_from_stem(item.example_name), "href": item.html_href, "image": item.img_web, "tags": item.tags, "type": "example"} for item in items],
             indent=2,
         )
         + "\n",

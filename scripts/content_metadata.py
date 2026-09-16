@@ -22,10 +22,17 @@ def load_metadata(kind: str) -> dict:
     except json.JSONDecodeError as exc:
         raise SystemExit(f"Invalid content metadata: {METADATA_FILE}: {exc}") from exc
 
+    taxonomy_tags = data.get("taxonomy", {}).get("tags", [])
+    if not isinstance(taxonomy_tags, list):
+        raise SystemExit("Metadata taxonomy.tags must be a list")
+    normalized_tags = [slugify(str(tag)) for tag in taxonomy_tags]
+    if len(normalized_tags) != len(set(normalized_tags)):
+        raise SystemExit("Metadata taxonomy contains duplicate tag slugs")
+
     section = data.get(kind)
     if not isinstance(section, dict):
         raise SystemExit(f"Metadata section {kind!r} must be an object")
-    section["allowed_tags"] = {slugify(tag) for tag in data.get("taxonomy", {}).get("tags", [])}
+    section["allowed_tags"] = set(normalized_tags)
     return section
 
 
@@ -47,8 +54,8 @@ def tags_for(section: dict, source_key: str, category: str | None = None) -> lis
     return result
 
 
-def tag_chips(tags: list[str]) -> str:
+def tag_chips(tags: list[str], href_prefix: str = "../tags/") -> str:
     return "".join(
-        f'<span class="content-tag content-tag--{slugify(tag)}">{tag.replace("-", " ")}</span>'
+        f'<a class="content-tag content-tag--{slugify(tag)}" href="{href_prefix}{slugify(tag)}.html">{tag.replace("-", " ")}</a>'
         for tag in tags
     )

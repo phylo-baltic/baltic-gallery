@@ -51,7 +51,7 @@ source_suffix = {
 }
 
 html_theme_options = {
-    "logo": {"text": "baltic website"},
+    "logo": {"text": "baltic"},
     "secondary_sidebar_items": {
         "**": [],
     },
