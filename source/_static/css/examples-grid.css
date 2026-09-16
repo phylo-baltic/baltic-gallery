@@ -163,8 +163,10 @@
   background: rgba(0,0,0,0.55);
   opacity: 0;
   transition: opacity 0.2s ease;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
 }
 
@@ -177,6 +179,25 @@
   font-weight: 600;
   text-align: center;
   line-height: 1.2;
+}
+
+.gallery-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+}
+
+.content-tag {
+  padding: 0.2rem 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 0.72rem;
+  line-height: 1;
+  text-transform: capitalize;
 }
 
 html[data-theme="dark"] .examples-card {

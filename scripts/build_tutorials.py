@@ -8,6 +8,8 @@ from dataclasses import dataclass
 from html import escape
 from pathlib import Path
 
+from content_metadata import load_metadata, tag_chips, tags_for
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 TUTORIALS_SRC = PROJECT_ROOT / "source" / "baltic-tutorials"
@@ -158,6 +160,7 @@ class TutorialItem:
     rst_doc: str
     html_href: str
     source_path: Path
+    tags: list[str]
 
 
 def collect_items() -> list[TutorialItem]:
@@ -175,6 +178,7 @@ def collect_items() -> list[TutorialItem]:
 
     items: list[TutorialItem] = []
     used_doc_slugs: set[str] = set()
+    metadata = load_metadata("tutorials")
 
     for source in sources:
         doc_slug = unique_doc_slug(slugify(source.stem), used_doc_slugs)
@@ -190,6 +194,7 @@ def collect_items() -> list[TutorialItem]:
                 rst_doc=doc_slug,
                 html_href=f"{doc_slug}.html",
                 source_path=source,
+                tags=tags_for(metadata, source.name),
             )
         )
 
@@ -247,6 +252,7 @@ def write_tutorials_landing(items: list[TutorialItem]) -> None:
     <img src="{escape(html_src(img), quote=True)}" alt="{escape(item.source_name, quote=True)}" loading="lazy">
     <div class="gallery-card__overlay">
       <div class="gallery-card__title">{escape(item.title)}</div>
+    <div class="gallery-card__tags">{tag_chips(item.tags)}</div>
     </div>
   </div>
 </a>
@@ -315,7 +321,17 @@ def write_manifest(items: list[TutorialItem]) -> None:
     )
 
     rel_paths = sorted({path.relative_to(PROJECT_ROOT).as_posix() for path in generated})
-    MANIFEST_FILE.write_text(json.dumps({"generated": rel_paths}, indent=2) + "\n", encoding="utf-8")
+    metadata_path = TUTORIALS_DOCS / ".content_items.json"
+    metadata_path.write_text(
+        json.dumps(
+            [{"title": item.title, "href": item.html_href, "tags": item.tags, "type": "tutorial"} for item in items],
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    rel_paths.append(metadata_path.relative_to(PROJECT_ROOT).as_posix())
+    MANIFEST_FILE.write_text(json.dumps({"generated": sorted(set(rel_paths))}, indent=2) + "\n", encoding="utf-8")
 
 
 def prune_stale_pages(items: list[TutorialItem]) -> None:

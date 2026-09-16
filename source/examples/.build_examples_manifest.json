@@ -80,6 +80,7 @@
     "source/_static/examples/wumv-6/tree-matrix.py",
     "source/_static/examples/zika-virus/root-to-tip.png",
     "source/_static/examples/zika-virus/root-to-tip.py",
+    "source/examples/.content_items.json",
     "source/examples/ebola-exploded-tree-high-level.rst",
     "source/examples/ebola-exploded-tree-low-level.rst",
     "source/examples/ebola-height-95hpd-bars.rst",

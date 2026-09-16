@@ -1,0 +1,161 @@
+[
+  {
+    "title": "basic tree aligned tips",
+    "href": "basic-tree-aligned-tips.html",
+    "tags": [
+      "aligned"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree bar",
+    "href": "basic-tree-bar.html",
+    "tags": [
+      "bar"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree circular inward",
+    "href": "basic-tree-circular-inward.html",
+    "tags": [
+      "circular"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree circular middle space",
+    "href": "basic-tree-circular-middle-space.html",
+    "tags": [
+      "circular"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree circular",
+    "href": "basic-tree-circular.html",
+    "tags": [
+      "circular"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree clade",
+    "href": "basic-tree-clade.html",
+    "tags": [
+      "traits",
+      "clade"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree collapse",
+    "href": "basic-tree-collapse.html",
+    "tags": [
+      "collapsed"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree common ancestor",
+    "href": "basic-tree-common-ancestor.html",
+    "tags": [
+      "time-scaled",
+      "trmca"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree invert",
+    "href": "basic-tree-invert.html",
+    "tags": [
+      "inverted"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree piechart",
+    "href": "basic-tree-piechart.html",
+    "tags": [
+      "traits",
+      "piechart"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree reduced",
+    "href": "basic-tree-reduced.html",
+    "tags": [
+      "reduced"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree reroot",
+    "href": "basic-tree-reroot.html",
+    "tags": [
+      "reroot"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree sort",
+    "href": "basic-tree-sort.html",
+    "tags": [
+      "sort"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree subtree",
+    "href": "basic-tree-subtree.html",
+    "tags": [
+      "subtree"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree text 1",
+    "href": "basic-tree-text-1.html",
+    "tags": [
+      "nodes",
+      "text"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree text 2",
+    "href": "basic-tree-text-2.html",
+    "tags": [
+      "nodes",
+      "text"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree text 3",
+    "href": "basic-tree-text-3.html",
+    "tags": [
+      "branches",
+      "text"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree treemap",
+    "href": "basic-tree-treemap.html",
+    "tags": [
+      "traits",
+      "treemap"
+    ],
+    "type": "tutorial"
+  },
+  {
+    "title": "basic tree",
+    "href": "basic-tree.html",
+    "tags": [
+      "scale"
+    ],
+    "type": "tutorial"
+  }
+]

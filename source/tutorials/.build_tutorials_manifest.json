@@ -38,6 +38,7 @@
     "source/_static/tutorials/basic-tree-treemap.py",
     "source/_static/tutorials/basic-tree.png",
     "source/_static/tutorials/basic-tree.py",
+    "source/tutorials/.content_items.json",
     "source/tutorials/basic-tree-aligned-tips.rst",
     "source/tutorials/basic-tree-bar.rst",
     "source/tutorials/basic-tree-circular-inward.rst",

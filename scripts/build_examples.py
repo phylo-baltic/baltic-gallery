@@ -8,6 +8,8 @@ import shutil
 from dataclasses import dataclass
 from pathlib import Path
 
+from content_metadata import load_metadata, tag_chips, tags_for
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 EXAMPLES_SRC = PROJECT_ROOT / "source" / "baltic-examples"          # input
@@ -148,12 +150,14 @@ class ExampleItem:
     rst_doc: str                 # <cat>/<example>
     html_href: str               # <cat>/<example>.html
     source_path: Path
+    tags: list[str]
 
 
 def collect_items() -> tuple[list[ExampleItem], dict[str, list[ExampleItem]]]:
     items: list[ExampleItem] = []
     by_cat: dict[str, list[ExampleItem]] = {}
     used_doc_slugs: set[str] = set()
+    metadata = load_metadata("examples")
 
     if not EXAMPLES_SRC.exists():
         raise SystemExit(f"Missing input folder: {EXAMPLES_SRC}")
@@ -193,6 +197,7 @@ def collect_items() -> tuple[list[ExampleItem], dict[str, list[ExampleItem]]]:
             rst_doc=doc_slug,
             html_href=f"{doc_slug}.html",
             source_path=source,
+            tags=tags_for(metadata, rel.as_posix(), category_name),
         )
         items.append(it)
         by_cat.setdefault(category_slug, []).append(it)
@@ -268,6 +273,7 @@ def write_examples_landing(by_cat: dict[str, list[ExampleItem]], items: list[Exa
     <img src="{src}" alt="{alt}" loading="lazy">
     <div class="gallery-card__overlay">
       <div class="gallery-card__title">{title}</div>
+            <div class="gallery-card__tags">{tag_chips(it.tags)}</div>
     </div>
   </div>
 </a>
@@ -349,7 +355,17 @@ def write_manifest(items: list[ExampleItem]) -> None:
     )
 
     rel_paths = sorted({path.relative_to(PROJECT_ROOT).as_posix() for path in generated})
-    MANIFEST_FILE.write_text(json.dumps({"generated": rel_paths}, indent=2) + "\n", encoding="utf-8")
+    metadata_path = EXAMPLES_DOCS / ".content_items.json"
+    metadata_path.write_text(
+        json.dumps(
+            [{"title": title_from_stem(item.example_name), "href": item.html_href, "tags": item.tags, "type": "example"} for item in items],
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    rel_paths.append(metadata_path.relative_to(PROJECT_ROOT).as_posix())
+    MANIFEST_FILE.write_text(json.dumps({"generated": sorted(set(rel_paths))}, indent=2) + "\n", encoding="utf-8")
 
 
 def prune_stale_pages(items: list[ExampleItem]) -> None:
