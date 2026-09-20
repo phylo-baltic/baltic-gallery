@@ -6,7 +6,7 @@
       "time-scaled", "geography", "traits", "reassortment", "nextstrain", "alignment",
       "ebola", "influenza-b", "mers-cov", "sars-cov-2", "wumv-6", "zika", "rabies",
       "exploded", "height-bars", "states", "collapsed", "tmrca", "density", "tanglegram",
-      "matrix", "gradient", "homoplasy", "spacing", "nodes", "reduced", "skygrid", "relative",
+      "matrix", "gradient", "homoplasy", "pad nodes", "reduced", "skygrid", "relative",
       "json", "auspice", "measles", "map", "piechart", "nipah", "connectors", "histogram",
       "muller", "snp", "network", "root-to-tip", "traversal", "aligned", "bar", "circular",
       "clade", "trmca", "inverted", "reroot", "sort", "subtree", "branches", "text", "treemap", "scale"
@@ -40,7 +40,7 @@
       "MERS-CoV/gradient-clade.py": ["traits", "mers-cov", "gradient"],
       "MERS-CoV/height-95HPD-bars.py": ["time-scaled", "mers-cov", "height-bars"],
       "MERS-CoV/homoplasy-tree.py": ["traits", "mers-cov", "homoplasy"],
-      "MERS-CoV/pad-nodes.py": ["mers-cov", "spacing", "nodes"],
+      "MERS-CoV/pad-nodes.py": ["mers-cov", "pad nodes"],
       "MERS-CoV/reduced-tree-camel.py": ["mers-cov", "reduced"],
       "MERS-CoV/reduced-tree-human.py": ["mers-cov", "reduced"],
       "MERS-CoV/simple-tree.py": ["mers-cov", "basic"],
