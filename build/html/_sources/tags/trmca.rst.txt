@@ -1,8 +1,9 @@
-Trmca
+trmca
 =====
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../tutorials/basic-tree-common-ancestor.html">
@@ -12,4 +13,5 @@ Trmca
          <a class="gallery-card__title" href="../tutorials/basic-tree-common-ancestor.html">basic tree common ancestor</a>
        </div>
      </div>
+   </div>
    </div>

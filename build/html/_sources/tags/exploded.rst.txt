@@ -1,8 +1,9 @@
-Exploded
+exploded
 ========
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/ebola-exploded-tree-high-level.html">
@@ -42,4 +43,5 @@ Exploded
          <a class="gallery-card__title" href="../examples/mers-cov-exploded-tree-low-level.html">exploded tree low level</a>
        </div>
      </div>
+   </div>
    </div>

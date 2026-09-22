@@ -1,0 +1,17 @@
+reassortment network
+====================
+
+.. raw:: html
+
+   <div class="gallery-grid">
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/wumv-6-reassortment-network.html">
+               <img src="../_static/examples/wumv-6/reassortment-network.png" alt="reassortment network" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/wumv-6-reassortment-network.html">reassortment network</a>
+       </div>
+     </div>
+   </div>
+   </div>

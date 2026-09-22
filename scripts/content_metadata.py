@@ -15,13 +15,17 @@ def slugify(value: str) -> str:
     return re.sub(r"-{2,}", "-", value)
 
 
-def load_metadata(kind: str) -> dict:
+def read_metadata() -> dict:
     try:
         data = json.loads(METADATA_FILE.read_text(encoding="utf-8"))
     except FileNotFoundError as exc:
         raise SystemExit(f"Missing content metadata: {METADATA_FILE}") from exc
     except json.JSONDecodeError as exc:
         raise SystemExit(f"Invalid content metadata: {METADATA_FILE}: {exc}") from exc
+    return data
+
+
+def tag_labels(data: dict) -> dict[str, str]:
 
     taxonomy_tags = data.get("taxonomy", {}).get("tags", [])
     if not isinstance(taxonomy_tags, list):
@@ -30,8 +34,17 @@ def load_metadata(kind: str) -> dict:
     normalized_tags = [slugify(tag) for tag in tag_labels]
     if any(not tag for tag in normalized_tags):
         raise SystemExit("Metadata taxonomy tags must have a non-empty slug")
-    if len(normalized_tags) != len(set(normalized_tags)):
-        raise SystemExit("Metadata taxonomy contains duplicate tag slugs")
+    labels = {}
+    for slug, label in zip(normalized_tags, tag_labels):
+        if slug in labels and labels[slug] != label:
+            raise SystemExit(f"Metadata taxonomy has conflicting labels for {slug!r}")
+        labels[slug] = label
+    return labels
+
+
+def load_metadata(kind: str) -> dict:
+    data = read_metadata()
+    labels = tag_labels(data)
 
     section = data.get(kind)
     if not isinstance(section, dict):
@@ -39,7 +52,7 @@ def load_metadata(kind: str) -> dict:
     # Keep the taxonomy spelling as the canonical display label. Item tags are
     # matched by slug so, for example, both "MERS-CoV" and "mers-cov" resolve
     # to the taxonomy label "MERS-CoV".
-    section["tag_labels"] = dict(zip(normalized_tags, tag_labels))
+    section["tag_labels"] = labels
     return section
 
 

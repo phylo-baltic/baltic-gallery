@@ -1,18 +1,9 @@
-Reassortment
+reassortment
 ============
 
 .. raw:: html
 
-   <div class="gallery-card">
-     <div class="gallery-card__imgwrap">
-           <a class="gallery-card__image-link" href="../examples/wumv-6-map-tree.html">
-               <img src="../_static/examples/wumv-6/map-tree.png" alt="map tree" loading="lazy">
-           </a>
-       <div class="gallery-card__overlay">
-         <a class="gallery-card__title" href="../examples/wumv-6-map-tree.html">map tree</a>
-       </div>
-     </div>
-   </div>
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/wumv-6-reassortment-network.html">
@@ -42,4 +33,5 @@ Reassortment
          <a class="gallery-card__title" href="../examples/wumv-6-tree-matrix.html">tree matrix</a>
        </div>
      </div>
+   </div>
    </div>

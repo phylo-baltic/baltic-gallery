@@ -1,8 +1,9 @@
-Time Scaled
+time-scaled
 ===========
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../tutorials/basic-tree-common-ancestor.html">
@@ -82,4 +83,5 @@ Time Scaled
          <a class="gallery-card__title" href="../examples/ebola-tmrca-hpd-tree.html">tmrca hpd tree</a>
        </div>
      </div>
+   </div>
    </div>

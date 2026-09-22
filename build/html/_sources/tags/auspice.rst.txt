@@ -1,8 +1,9 @@
-Auspice
+auspice
 =======
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/nextstrain-auspice-json-io.html">
@@ -12,4 +13,5 @@ Auspice
          <a class="gallery-card__title" href="../examples/nextstrain-auspice-json-io.html">auspice json io</a>
        </div>
      </div>
+   </div>
    </div>

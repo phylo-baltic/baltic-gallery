@@ -1,8 +1,9 @@
-Matrix
+matrix
 ======
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/influenza-b-virus-tree-matrix.html">
@@ -22,4 +23,5 @@ Matrix
          <a class="gallery-card__title" href="../examples/wumv-6-tree-matrix.html">tree matrix</a>
        </div>
      </div>
+   </div>
    </div>

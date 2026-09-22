@@ -1,8 +1,9 @@
-Influenza B
+influenza-b
 ===========
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/nextstrain-nextstrain-avian-flu-tanglegram.html">
@@ -42,4 +43,5 @@ Influenza B
          <a class="gallery-card__title" href="../examples/influenza-b-virus-tree-matrix.html">tree matrix</a>
        </div>
      </div>
+   </div>
    </div>

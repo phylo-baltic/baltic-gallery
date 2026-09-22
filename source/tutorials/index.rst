@@ -14,7 +14,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-aligned-tips.html">basic tree aligned tips</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--aligned" href="../tags/aligned.html">aligned</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--text" href="../tags/text.html">text</a><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -24,7 +24,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-bar.html">basic tree bar</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--bar" href="../tags/bar.html">bar</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--trait-proportions" href="../tags/trait-proportions.html">trait proportions</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -64,7 +64,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-clade.html">basic tree clade</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--clade" href="../tags/clade.html">clade</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--collapsed-clade" href="../tags/collapsed-clade.html">collapsed clade</a><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -74,7 +74,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-collapse.html">basic tree collapse</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--collapsed" href="../tags/collapsed.html">collapsed</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--collapsed-branch" href="../tags/collapsed-branch.html">collapsed branch</a><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -84,7 +84,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-common-ancestor.html">basic tree common ancestor</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time scaled</a><a class="content-tag content-tag--trmca" href="../tags/trmca.html">trmca</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time-scaled</a><a class="content-tag content-tag--tmrca" href="../tags/tmrca.html">TMRCA</a><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -94,7 +94,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-invert.html">basic tree invert</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--inverted" href="../tags/inverted.html">inverted</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--inverted" href="../tags/inverted.html">inverted</a><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -104,7 +104,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-piechart.html">basic tree piechart</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--piechart" href="../tags/piechart.html">piechart</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--trait-proportions" href="../tags/trait-proportions.html">trait proportions</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -114,7 +114,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-reduced.html">basic tree reduced</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--reduced" href="../tags/reduced.html">reduced</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--reduced-tree" href="../tags/reduced-tree.html">reduced tree</a><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -124,7 +124,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-reroot.html">basic tree reroot</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--reroot" href="../tags/reroot.html">reroot</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--reroot" href="../tags/reroot.html">reroot</a><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -134,7 +134,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-sort.html">basic tree sort</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--sort" href="../tags/sort.html">sort</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -144,7 +144,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-subtree.html">basic tree subtree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--subtree" href="../tags/subtree.html">subtree</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--subtree" href="../tags/subtree.html">subtree</a><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -154,7 +154,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-text-1.html">basic tree text 1</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--nodes" href="../tags/nodes.html">nodes</a><a class="content-tag content-tag--text" href="../tags/text.html">text</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--text" href="../tags/text.html">text</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -164,7 +164,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-text-2.html">basic tree text 2</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--nodes" href="../tags/nodes.html">nodes</a><a class="content-tag content-tag--text" href="../tags/text.html">text</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--text" href="../tags/text.html">text</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -174,7 +174,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-text-3.html">basic tree text 3</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--branches" href="../tags/branches.html">branches</a><a class="content-tag content-tag--text" href="../tags/text.html">text</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--text" href="../tags/text.html">text</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -184,7 +184,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree-treemap.html">basic tree treemap</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--treemap" href="../tags/treemap.html">treemap</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--trait-proportions" href="../tags/trait-proportions.html">trait proportions</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -194,7 +194,7 @@ This page contains tutorial notebooks for learning baltic workflows.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="basic-tree.html">basic tree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--scale" href="../tags/scale.html">scale</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
        </div>
      </div>
    </div>

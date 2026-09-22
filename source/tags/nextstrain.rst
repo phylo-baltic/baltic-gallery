@@ -1,8 +1,9 @@
-Nextstrain
+nextstrain
 ==========
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/nextstrain-auspice-json-io.html">
@@ -52,4 +53,5 @@ Nextstrain
          <a class="gallery-card__title" href="../examples/nextstrain-nextstrain-nipah-map-piecharts.html">nextstrain nipah map piecharts</a>
        </div>
      </div>
+   </div>
    </div>

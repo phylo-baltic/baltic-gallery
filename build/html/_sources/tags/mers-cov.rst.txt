@@ -1,8 +1,9 @@
-Mers Cov
+MERS-CoV
 ========
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/mers-cov-exploded-tree-high-level.html">
@@ -132,4 +133,5 @@ Mers Cov
          <a class="gallery-card__title" href="../examples/mers-cov-state-collapsed-tree-earliest-adjust.html">state collapsed tree earliest adjust</a>
        </div>
      </div>
+   </div>
    </div>

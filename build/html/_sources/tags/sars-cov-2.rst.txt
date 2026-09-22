@@ -1,8 +1,9 @@
-Sars Cov 2
+SARS-CoV-2
 ==========
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/sars-cov-2-muller-plot-abstract.html">
@@ -32,4 +33,5 @@ Sars Cov 2
          <a class="gallery-card__title" href="../examples/sars-cov-2-travel-aware-tree.html">travel aware tree</a>
        </div>
      </div>
+   </div>
    </div>

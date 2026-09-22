@@ -6,7 +6,7 @@ from collections import defaultdict
 from html import escape
 from pathlib import Path
 
-from content_metadata import slugify
+from content_metadata import read_metadata, slugify, tag_labels
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SOURCE = PROJECT_ROOT / "source"
@@ -45,7 +45,7 @@ def card(item: dict) -> str:
 
 
 def main() -> None:
-    clean_previous_outputs()
+    labels = tag_labels(read_metadata())
     items = []
     for item_file in ITEM_FILES:
         if item_file.exists():
@@ -55,25 +55,32 @@ def main() -> None:
 
     by_tag = defaultdict(list)
     for item in items:
-        for tag in item.get("tags", []):
+        for tag in dict.fromkeys(slugify(tag) for tag in item.get("tags", [])):
+            if tag not in labels:
+                raise SystemExit(
+                    f"Unknown generated tag {tag!r}; rerun build_examples.py and "
+                    "build_tutorials.py after updating content_metadata.json."
+                )
             by_tag[tag].append(item)
 
+    clean_previous_outputs()
     TAGS_DOCS.mkdir(parents=True, exist_ok=True)
     generated = []
     index_links = []
     for tag in sorted(by_tag, key=str.casefold):
         tag_slug = slugify(tag)
-        tag_title = tag
+        tag_title = labels[tag]
         tag_page = TAGS_DOCS / f"{tag_slug}.rst"
         cards = "\n".join(card(item) for item in sorted(by_tag[tag], key=lambda value: value["title"].lower()))
-        indented_cards = "\n".join(f"   {line}" for line in cards.splitlines())
+        gallery = f'<div class="gallery-grid">\n{cards}\n</div>'
+        indented_cards = "\n".join(f"   {line}" for line in gallery.splitlines())
         rst = f"{tag_title}\n{'=' * len(tag_title)}\n\n.. raw:: html\n\n{indented_cards}\n"
         tag_page.write_text(rst, encoding="utf-8")
         generated.append(tag_page.relative_to(PROJECT_ROOT).as_posix())
-        index_links.append(f"   * `{tag_title} <{tag_slug}.html>`__")
+        index_links.append(f"* `{tag_title} <{tag_slug}.html>`__")
 
     index_path = TAGS_DOCS / "index.rst"
-    toc = "\n.. toctree::\n   :hidden:\n\n" + "\n".join(
+    toc = "\n\n.. toctree::\n   :hidden:\n\n" + "\n".join(
         f"   {slugify(tag)}" for tag in sorted(by_tag, key=str.casefold)
     ) + "\n"
     index_path.write_text("Tags\n====\n\nBrowse the generated gallery pages by tag.\n\n" + "\n".join(index_links) + toc, encoding="utf-8")
