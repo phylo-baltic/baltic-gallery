@@ -78,6 +78,7 @@ dependencies:
       - nbformat==5.10.4
       - pillow==12.0.0
       - platformdirs==4.5.1
+      - pybtex==0.26.1
       - pydata-sphinx-theme==0.16.1
       - python-dateutil==2.9.0.post0
       - pyzmq==27.1.0
