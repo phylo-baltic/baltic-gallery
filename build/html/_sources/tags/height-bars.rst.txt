@@ -1,8 +1,9 @@
-Height Bars
+height bars
 ===========
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/ebola-height-95hpd-bars.html">
@@ -22,4 +23,5 @@ Height Bars
          <a class="gallery-card__title" href="../examples/mers-cov-height-95hpd-bars.html">height 95HPD bars</a>
        </div>
      </div>
+   </div>
    </div>

@@ -1,0 +1,107 @@
+Ebola virus
+===========
+
+.. raw:: html
+
+   <div class="gallery-grid">
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/ebola-exploded-tree-high-level.html">
+               <img src="../_static/examples/ebola/exploded-tree-high-level.png" alt="exploded tree high level" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/ebola-exploded-tree-high-level.html">exploded tree high level</a>
+       </div>
+     </div>
+   </div>
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/ebola-exploded-tree-low-level.html">
+               <img src="../_static/examples/ebola/exploded-tree-low-level.png" alt="exploded tree low level" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/ebola-exploded-tree-low-level.html">exploded tree low level</a>
+       </div>
+     </div>
+   </div>
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/ebola-height-95hpd-bars.html">
+               <img src="../_static/examples/ebola/height-95HPD-bars.png" alt="height 95HPD bars" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/ebola-height-95hpd-bars.html">height 95HPD bars</a>
+       </div>
+     </div>
+   </div>
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/samogitia-samogitia-ebola-custom.html">
+               <img src="../_static/examples/samogitia/samogitia-ebola-custom.png" alt="samogitia ebola custom" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/samogitia-samogitia-ebola-custom.html">samogitia ebola custom</a>
+       </div>
+     </div>
+   </div>
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/samogitia-samogitia-ebola-tmrca.html">
+               <img src="../_static/examples/samogitia/samogitia-ebola-tmrca.png" alt="samogitia ebola tmrca" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/samogitia-samogitia-ebola-tmrca.html">samogitia ebola tmrca</a>
+       </div>
+     </div>
+   </div>
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/ebola-simple-tree.html">
+               <img src="../_static/examples/ebola/simple-tree.png" alt="simple tree" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/ebola-simple-tree.html">simple tree</a>
+       </div>
+     </div>
+   </div>
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/ebola-state-collapsed-tree.html">
+               <img src="../_static/examples/ebola/state-collapsed-tree.png" alt="state collapsed tree" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/ebola-state-collapsed-tree.html">state collapsed tree</a>
+       </div>
+     </div>
+   </div>
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/ebola-state-collapsed-tree-earliest.html">
+               <img src="../_static/examples/ebola/state-collapsed-tree-earliest.png" alt="state collapsed tree earliest" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/ebola-state-collapsed-tree-earliest.html">state collapsed tree earliest</a>
+       </div>
+     </div>
+   </div>
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/ebola-state-collapsed-tree-earliest-adjust.html">
+               <img src="../_static/examples/ebola/state-collapsed-tree-earliest-adjust.png" alt="state collapsed tree earliest adjust" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/ebola-state-collapsed-tree-earliest-adjust.html">state collapsed tree earliest adjust</a>
+       </div>
+     </div>
+   </div>
+   <div class="gallery-card">
+     <div class="gallery-card__imgwrap">
+           <a class="gallery-card__image-link" href="../examples/ebola-tmrca-hpd-tree.html">
+               <img src="../_static/examples/ebola/tmrca-hpd-tree.png" alt="tmrca hpd tree" loading="lazy">
+           </a>
+       <div class="gallery-card__overlay">
+         <a class="gallery-card__title" href="../examples/ebola-tmrca-hpd-tree.html">tmrca hpd tree</a>
+       </div>
+     </div>
+   </div>
+   </div>

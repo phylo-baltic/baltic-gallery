@@ -4,7 +4,8 @@
     "href": "basic-tree-aligned-tips.html",
     "image": "_static/tutorials/basic-tree-aligned-tips.png",
     "tags": [
-      "aligned"
+      "text",
+      "scale bar"
     ],
     "type": "tutorial"
   },
@@ -13,7 +14,8 @@
     "href": "basic-tree-bar.html",
     "image": "_static/tutorials/basic-tree-bar.png",
     "tags": [
-      "bar"
+      "traits",
+      "trait proportions"
     ],
     "type": "tutorial"
   },
@@ -49,8 +51,8 @@
     "href": "basic-tree-clade.html",
     "image": "_static/tutorials/basic-tree-clade.png",
     "tags": [
-      "traits",
-      "clade"
+      "collapsed clade",
+      "scale bar"
     ],
     "type": "tutorial"
   },
@@ -59,7 +61,8 @@
     "href": "basic-tree-collapse.html",
     "image": "_static/tutorials/basic-tree-collapse.png",
     "tags": [
-      "collapsed"
+      "collapsed branch",
+      "scale bar"
     ],
     "type": "tutorial"
   },
@@ -69,7 +72,8 @@
     "image": "_static/tutorials/basic-tree-common-ancestor.png",
     "tags": [
       "time-scaled",
-      "trmca"
+      "TMRCA",
+      "scale bar"
     ],
     "type": "tutorial"
   },
@@ -78,7 +82,8 @@
     "href": "basic-tree-invert.html",
     "image": "_static/tutorials/basic-tree-invert.png",
     "tags": [
-      "inverted"
+      "inverted",
+      "scale bar"
     ],
     "type": "tutorial"
   },
@@ -88,7 +93,7 @@
     "image": "_static/tutorials/basic-tree-piechart.png",
     "tags": [
       "traits",
-      "piechart"
+      "trait proportions"
     ],
     "type": "tutorial"
   },
@@ -97,7 +102,8 @@
     "href": "basic-tree-reduced.html",
     "image": "_static/tutorials/basic-tree-reduced.png",
     "tags": [
-      "reduced"
+      "reduced tree",
+      "scale bar"
     ],
     "type": "tutorial"
   },
@@ -106,7 +112,8 @@
     "href": "basic-tree-reroot.html",
     "image": "_static/tutorials/basic-tree-reroot.png",
     "tags": [
-      "reroot"
+      "reroot",
+      "scale bar"
     ],
     "type": "tutorial"
   },
@@ -115,7 +122,7 @@
     "href": "basic-tree-sort.html",
     "image": "_static/tutorials/basic-tree-sort.png",
     "tags": [
-      "sort"
+      "scale bar"
     ],
     "type": "tutorial"
   },
@@ -124,7 +131,8 @@
     "href": "basic-tree-subtree.html",
     "image": "_static/tutorials/basic-tree-subtree.png",
     "tags": [
-      "subtree"
+      "subtree",
+      "scale bar"
     ],
     "type": "tutorial"
   },
@@ -133,7 +141,6 @@
     "href": "basic-tree-text-1.html",
     "image": "_static/tutorials/basic-tree-text-1.png",
     "tags": [
-      "nodes",
       "text"
     ],
     "type": "tutorial"
@@ -143,7 +150,6 @@
     "href": "basic-tree-text-2.html",
     "image": "_static/tutorials/basic-tree-text-2.png",
     "tags": [
-      "nodes",
       "text"
     ],
     "type": "tutorial"
@@ -153,7 +159,6 @@
     "href": "basic-tree-text-3.html",
     "image": "_static/tutorials/basic-tree-text-3.png",
     "tags": [
-      "branches",
       "text"
     ],
     "type": "tutorial"
@@ -164,7 +169,7 @@
     "image": "_static/tutorials/basic-tree-treemap.png",
     "tags": [
       "traits",
-      "treemap"
+      "trait proportions"
     ],
     "type": "tutorial"
   },
@@ -173,7 +178,7 @@
     "href": "basic-tree.html",
     "image": "_static/tutorials/basic-tree.png",
     "tags": [
-      "scale"
+      "scale bar"
     ],
     "type": "tutorial"
   }

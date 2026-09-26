@@ -1,8 +1,9 @@
-Tanglegram
+tanglegram
 ==========
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/nextstrain-nextstrain-avian-flu-tanglegram.html">
@@ -32,4 +33,5 @@ Tanglegram
          <a class="gallery-card__title" href="../examples/wumv-6-tangled-chain.html">tangled chain</a>
        </div>
      </div>
+   </div>
    </div>

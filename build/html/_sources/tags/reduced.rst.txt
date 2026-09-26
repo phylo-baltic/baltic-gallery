@@ -1,8 +1,9 @@
-Reduced
+reduced
 =======
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../tutorials/basic-tree-reduced.html">
@@ -32,4 +33,5 @@ Reduced
          <a class="gallery-card__title" href="../examples/mers-cov-reduced-tree-human.html">reduced tree human</a>
        </div>
      </div>
+   </div>
    </div>

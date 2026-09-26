@@ -52,6 +52,7 @@ source_suffix = {
 
 html_theme_options = {
     "logo": {"text": "baltic"},
+    "navbar_persistent": [],  # Remove the search bar on desktop and mobile.
     "secondary_sidebar_items": {
         "**": [],
     },

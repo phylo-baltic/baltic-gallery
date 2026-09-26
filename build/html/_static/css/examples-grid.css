@@ -124,15 +124,29 @@
 } */
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.25rem;
+  display: block;
+  columns: 3;
+  column-gap: 1.25rem;
+}
+
+@media (max-width: 991px) {
+  .gallery-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 575px) {
+  .gallery-grid {
+    columns: 1;
+  }
 }
 
 .gallery-card {
   text-decoration: none;
   color: inherit;
   display: block;
+  break-inside: avoid;
+  margin-bottom: 1.25rem;
 }
 
 .gallery-card__imgwrap {
@@ -146,8 +160,8 @@
 
 .gallery-card__imgwrap img {
   width: 100%;
-  aspect-ratio: 1 / 1;     /* square */
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: auto;
   display: block;
 }
 
@@ -160,13 +174,12 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.18);
 }
 
-/* Hover overlay like matplotlib */
+/* Tags stay visible; the image shade and title appear on hover or focus. */
 .gallery-card__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
-  opacity: 0;
-  transition: opacity 0.2s ease;
+  background: transparent;
+  transition: background-color 0.2s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,11 +192,14 @@
   pointer-events: auto;
 }
 
-.gallery-card__imgwrap:hover .gallery-card__overlay {
-  opacity: 1;
+.gallery-card__imgwrap:hover .gallery-card__overlay,
+.gallery-card__imgwrap:focus-within .gallery-card__overlay {
+  background: rgba(0,0,0,0.55);
 }
 
 .gallery-card__title {
+  opacity: 0;
+  transition: opacity 0.2s ease;
   color: #fff;
   display: block;
   font-weight: 600;
@@ -192,21 +208,31 @@
   text-decoration: none;
 }
 
+.gallery-card__imgwrap:hover .gallery-card__title,
+.gallery-card__imgwrap:focus-within .gallery-card__title {
+  opacity: 1;
+}
+
 .gallery-card__title:hover {
   color: #fff;
   text-decoration: underline;
 }
 
 .gallery-card__tags {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  right: 0.65rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 100%;
   gap: 0.35rem;
-  margin-top: 0.75rem;
+  margin-top: 0;
 }
 
 .content-tag {
+  background: rgba(0, 0, 0, 0.75);
   text-decoration: none;
   padding: 0.2rem 0.45rem;
   border: 1px solid rgba(255, 255, 255, 0.65);
@@ -214,12 +240,13 @@
   color: #fff;
   font-size: 0.72rem;
   line-height: 1;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
-.content-tag:hover {
+.content-tag:hover,
+.content-tag:focus-visible {
   color: #fff;
-  background: rgba(255, 255, 255, 0.18);
+  background: #222;
 }
 
 html[data-theme="dark"] .examples-card {

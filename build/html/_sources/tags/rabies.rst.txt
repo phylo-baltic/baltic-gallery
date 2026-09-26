@@ -1,8 +1,9 @@
-Rabies
+rabies
 ======
 
 .. raw:: html
 
+   <div class="gallery-grid">
    <div class="gallery-card">
      <div class="gallery-card__imgwrap">
            <a class="gallery-card__image-link" href="../examples/samogitia-samogitia-ebola-custom.html">
@@ -32,4 +33,5 @@ Rabies
          <a class="gallery-card__title" href="../examples/samogitia-samogitia-rabv-trace-state.html">samogitia rabv trace state</a>
        </div>
      </div>
+   </div>
    </div>
