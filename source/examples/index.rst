@@ -16,7 +16,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="ebola-exploded-tree-high-level.html">exploded tree high level</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--ebola-virus" href="../tags/ebola-virus.html">Ebola virus</a><a class="content-tag content-tag--exploded-tree" href="../tags/exploded-tree.html">exploded tree</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--ebola" href="../tags/ebola.html">ebola</a><a class="content-tag content-tag--exploded" href="../tags/exploded.html">exploded</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -26,7 +26,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="ebola-exploded-tree-low-level.html">exploded tree low level</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--ebola-virus" href="../tags/ebola-virus.html">Ebola virus</a><a class="content-tag content-tag--exploded-tree" href="../tags/exploded-tree.html">exploded tree</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--ebola" href="../tags/ebola.html">ebola</a><a class="content-tag content-tag--exploded" href="../tags/exploded.html">exploded</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -36,7 +36,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="ebola-height-95hpd-bars.html">height 95HPD bars</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time-scaled</a><a class="content-tag content-tag--ebola-virus" href="../tags/ebola-virus.html">Ebola virus</a><a class="content-tag content-tag--height-bars" href="../tags/height-bars.html">height bars</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time scaled</a><a class="content-tag content-tag--ebola" href="../tags/ebola.html">ebola</a><a class="content-tag content-tag--height-bars" href="../tags/height-bars.html">height bars</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -46,7 +46,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="ebola-simple-tree.html">simple tree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--ebola-virus" href="../tags/ebola-virus.html">Ebola virus</a><a class="content-tag content-tag--basic" href="../tags/basic.html">basic</a><a class="content-tag content-tag--colour" href="../tags/colour.html">colour</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--ebola" href="../tags/ebola.html">ebola</a><a class="content-tag content-tag--basic" href="../tags/basic.html">basic</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -56,7 +56,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="ebola-state-collapsed-tree-earliest-adjust.html">state collapsed tree earliest adjust</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--ebola-virus" href="../tags/ebola-virus.html">Ebola virus</a><a class="content-tag content-tag--state-collapsed" href="../tags/state-collapsed.html">state-collapsed</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--ebola" href="../tags/ebola.html">ebola</a><a class="content-tag content-tag--states" href="../tags/states.html">states</a><a class="content-tag content-tag--collapsed" href="../tags/collapsed.html">collapsed</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -66,7 +66,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="ebola-state-collapsed-tree-earliest.html">state collapsed tree earliest</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--ebola-virus" href="../tags/ebola-virus.html">Ebola virus</a><a class="content-tag content-tag--state-collapsed" href="../tags/state-collapsed.html">state-collapsed</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--ebola" href="../tags/ebola.html">ebola</a><a class="content-tag content-tag--states" href="../tags/states.html">states</a><a class="content-tag content-tag--collapsed" href="../tags/collapsed.html">collapsed</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -76,7 +76,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="ebola-state-collapsed-tree.html">state collapsed tree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--ebola-virus" href="../tags/ebola-virus.html">Ebola virus</a><a class="content-tag content-tag--state-collapsed" href="../tags/state-collapsed.html">state-collapsed</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--ebola" href="../tags/ebola.html">ebola</a><a class="content-tag content-tag--collapsed" href="../tags/collapsed.html">collapsed</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -86,7 +86,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="ebola-tmrca-hpd-tree.html">tmrca hpd tree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time-scaled</a><a class="content-tag content-tag--ebola-virus" href="../tags/ebola-virus.html">Ebola virus</a><a class="content-tag content-tag--tmrca" href="../tags/tmrca.html">TMRCA</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time scaled</a><a class="content-tag content-tag--ebola" href="../tags/ebola.html">ebola</a><a class="content-tag content-tag--tmrca" href="../tags/tmrca.html">tmrca</a><a class="content-tag content-tag--density" href="../tags/density.html">density</a></div>
        </div>
      </div>
    </div>
@@ -102,7 +102,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="influenza-b-virus-tangled-chain.html">tangled chain</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--influenza-b-virus" href="../tags/influenza-b-virus.html">Influenza B virus</a><a class="content-tag content-tag--tanglegram" href="../tags/tanglegram.html">tanglegram</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--influenza-b" href="../tags/influenza-b.html">influenza b</a><a class="content-tag content-tag--tanglegram" href="../tags/tanglegram.html">tanglegram</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -112,7 +112,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="influenza-b-virus-tree-matrix.html">tree matrix</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--influenza-b-virus" href="../tags/influenza-b-virus.html">Influenza B virus</a><a class="content-tag content-tag--matrix" href="../tags/matrix.html">matrix</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--influenza-b" href="../tags/influenza-b.html">influenza b</a><a class="content-tag content-tag--matrix" href="../tags/matrix.html">matrix</a></div>
        </div>
      </div>
    </div>
@@ -128,7 +128,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-exploded-tree-high-level.html">exploded tree high level</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--exploded-tree" href="../tags/exploded-tree.html">exploded tree</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--exploded" href="../tags/exploded.html">exploded</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -138,7 +138,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-exploded-tree-low-level.html">exploded tree low level</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--exploded-tree" href="../tags/exploded-tree.html">exploded tree</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--exploded" href="../tags/exploded.html">exploded</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -148,7 +148,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-gradient-clade.html">gradient clade</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--gradient-clade" href="../tags/gradient-clade.html">gradient clade</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--gradient" href="../tags/gradient.html">gradient</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -158,7 +158,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-height-95hpd-bars.html">height 95HPD bars</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time-scaled</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--height-bars" href="../tags/height-bars.html">height bars</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time scaled</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--height-bars" href="../tags/height-bars.html">height bars</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -168,7 +168,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-homoplasy-tree.html">homoplasy tree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--homoplasy" href="../tags/homoplasy.html">homoplasy</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--homoplasy" href="../tags/homoplasy.html">homoplasy</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -178,7 +178,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-pad-nodes.html">pad nodes</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--pad-nodes" href="../tags/pad-nodes.html">pad nodes</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--spacing" href="../tags/spacing.html">spacing</a><a class="content-tag content-tag--nodes" href="../tags/nodes.html">nodes</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -188,7 +188,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-reduced-tree-camel.html">reduced tree camel</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--reduced-tree" href="../tags/reduced-tree.html">reduced tree</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--reduced" href="../tags/reduced.html">reduced</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -198,7 +198,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-reduced-tree-human.html">reduced tree human</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--reduced-tree" href="../tags/reduced-tree.html">reduced tree</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--reduced" href="../tags/reduced.html">reduced</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -208,7 +208,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-simple-tree.html">simple tree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--basic" href="../tags/basic.html">basic</a><a class="content-tag content-tag--colour" href="../tags/colour.html">colour</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--basic" href="../tags/basic.html">basic</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -218,7 +218,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-skygrid-calendar-time.html">skygrid calendar time</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time-scaled</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--skygrid" href="../tags/skygrid.html">skygrid</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time scaled</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--skygrid" href="../tags/skygrid.html">skygrid</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -228,7 +228,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-skygrid-relative-time.html">skygrid relative time</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time-scaled</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--skygrid" href="../tags/skygrid.html">skygrid</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time scaled</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--skygrid" href="../tags/skygrid.html">skygrid</a><a class="content-tag content-tag--relative" href="../tags/relative.html">relative</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -238,7 +238,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-state-collapsed-tree-earliest-adjust.html">state collapsed tree earliest adjust</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--state-collapsed" href="../tags/state-collapsed.html">state-collapsed</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--states" href="../tags/states.html">states</a><a class="content-tag content-tag--collapsed" href="../tags/collapsed.html">collapsed</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -248,7 +248,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="mers-cov-state-collapsed-tree.html">state collapsed tree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">MERS-CoV</a><a class="content-tag content-tag--state-collapsed" href="../tags/state-collapsed.html">state-collapsed</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--mers-cov" href="../tags/mers-cov.html">mers cov</a><a class="content-tag content-tag--states" href="../tags/states.html">states</a><a class="content-tag content-tag--collapsed" href="../tags/collapsed.html">collapsed</a><a class="content-tag content-tag--basic" href="../tags/basic.html">basic</a></div>
        </div>
      </div>
    </div>
@@ -264,7 +264,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="nextstrain-auspice-json-io.html">auspice json io</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--nextstrain" href="../tags/nextstrain.html">nextstrain</a><a class="content-tag content-tag--auspice-json" href="../tags/auspice-json.html">Auspice JSON</a><a class="content-tag content-tag--io" href="../tags/io.html">IO</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--nextstrain" href="../tags/nextstrain.html">nextstrain</a><a class="content-tag content-tag--json" href="../tags/json.html">json</a><a class="content-tag content-tag--auspice" href="../tags/auspice.html">auspice</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -274,7 +274,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="nextstrain-nextstrain-avian-flu-tanglegram.html">nextstrain avian flu tanglegram</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--nextstrain" href="../tags/nextstrain.html">nextstrain</a><a class="content-tag content-tag--influenza-b-virus" href="../tags/influenza-b-virus.html">Influenza B virus</a><a class="content-tag content-tag--tanglegram" href="../tags/tanglegram.html">tanglegram</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--nextstrain" href="../tags/nextstrain.html">nextstrain</a><a class="content-tag content-tag--influenza-b" href="../tags/influenza-b.html">influenza b</a><a class="content-tag content-tag--tanglegram" href="../tags/tanglegram.html">tanglegram</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -284,7 +284,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="nextstrain-nextstrain-flu-lineage-map.html">nextstrain flu lineage map</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--geography" href="../tags/geography.html">geography</a><a class="content-tag content-tag--nextstrain" href="../tags/nextstrain.html">nextstrain</a><a class="content-tag content-tag--influenza-b-virus" href="../tags/influenza-b-virus.html">Influenza B virus</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--geography" href="../tags/geography.html">geography</a><a class="content-tag content-tag--nextstrain" href="../tags/nextstrain.html">nextstrain</a><a class="content-tag content-tag--influenza-b" href="../tags/influenza-b.html">influenza b</a><a class="content-tag content-tag--map" href="../tags/map.html">map</a><a class="content-tag content-tag--piechart" href="../tags/piechart.html">piechart</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -294,7 +294,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="nextstrain-nextstrain-measles-map-piecharts.html">nextstrain measles map piecharts</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--geography" href="../tags/geography.html">geography</a><a class="content-tag content-tag--nextstrain" href="../tags/nextstrain.html">nextstrain</a><a class="content-tag content-tag--measles-virus" href="../tags/measles-virus.html">Measles virus</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--geography" href="../tags/geography.html">geography</a><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--nextstrain" href="../tags/nextstrain.html">nextstrain</a><a class="content-tag content-tag--measles" href="../tags/measles.html">measles</a><a class="content-tag content-tag--map" href="../tags/map.html">map</a><a class="content-tag content-tag--piechart" href="../tags/piechart.html">piechart</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -304,7 +304,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="nextstrain-nextstrain-nipah-map-piecharts.html">nextstrain nipah map piecharts</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--geography" href="../tags/geography.html">geography</a><a class="content-tag content-tag--nextstrain" href="../tags/nextstrain.html">nextstrain</a><a class="content-tag content-tag--nipah-virus" href="../tags/nipah-virus.html">Nipah virus</a><a class="content-tag content-tag--connectors" href="../tags/connectors.html">connectors</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--geography" href="../tags/geography.html">geography</a><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--nextstrain" href="../tags/nextstrain.html">nextstrain</a><a class="content-tag content-tag--nipah" href="../tags/nipah.html">nipah</a><a class="content-tag content-tag--map" href="../tags/map.html">map</a><a class="content-tag content-tag--connectors" href="../tags/connectors.html">connectors</a><a class="content-tag content-tag--piechart" href="../tags/piechart.html">piechart</a></div>
        </div>
      </div>
    </div>
@@ -320,7 +320,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="samogitia-samogitia-ebola-custom.html">samogitia ebola custom</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--ebola-virus" href="../tags/ebola-virus.html">Ebola virus</a><a class="content-tag content-tag--posterior-processing" href="../tags/posterior-processing.html">posterior processing</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--histogram" href="../tags/histogram.html">histogram</a><a class="content-tag content-tag--ebola" href="../tags/ebola.html">ebola</a><a class="content-tag content-tag--rabies" href="../tags/rabies.html">rabies</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -330,7 +330,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="samogitia-samogitia-ebola-tmrca.html">samogitia ebola tmrca</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time-scaled</a><a class="content-tag content-tag--ebola-virus" href="../tags/ebola-virus.html">Ebola virus</a><a class="content-tag content-tag--tmrca" href="../tags/tmrca.html">TMRCA</a><a class="content-tag content-tag--posterior-processing" href="../tags/posterior-processing.html">posterior processing</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--density" href="../tags/density.html">density</a><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time scaled</a><a class="content-tag content-tag--ebola" href="../tags/ebola.html">ebola</a><a class="content-tag content-tag--rabies" href="../tags/rabies.html">rabies</a><a class="content-tag content-tag--tmrca" href="../tags/tmrca.html">tmrca</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -340,7 +340,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="samogitia-samogitia-rabv-trace-state.html">samogitia rabv trace state</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--rabies-virus" href="../tags/rabies-virus.html">Rabies virus</a><a class="content-tag content-tag--posterior-processing" href="../tags/posterior-processing.html">posterior processing</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--states" href="../tags/states.html">states</a><a class="content-tag content-tag--traits" href="../tags/traits.html">traits</a><a class="content-tag content-tag--rabies" href="../tags/rabies.html">rabies</a><a class="content-tag content-tag--density" href="../tags/density.html">density</a></div>
        </div>
      </div>
    </div>
@@ -356,7 +356,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="sars-cov-2-muller-plot-abstract.html">Muller plot abstract</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--muller" href="../tags/muller.html">Muller</a><a class="content-tag content-tag--sars-cov-2" href="../tags/sars-cov-2.html">SARS-CoV-2</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--muller" href="../tags/muller.html">muller</a><a class="content-tag content-tag--sars-cov-2" href="../tags/sars-cov-2.html">sars cov 2</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -366,7 +366,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="sars-cov-2-snp-alignment.html">snp alignment</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--sars-cov-2" href="../tags/sars-cov-2.html">SARS-CoV-2</a><a class="content-tag content-tag--snp-alignment" href="../tags/snp-alignment.html">SNP alignment</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--alignment" href="../tags/alignment.html">alignment</a><a class="content-tag content-tag--sars-cov-2" href="../tags/sars-cov-2.html">sars cov 2</a><a class="content-tag content-tag--snp" href="../tags/snp.html">snp</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -376,7 +376,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="sars-cov-2-travel-aware-tree.html">travel aware tree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--sars-cov-2" href="../tags/sars-cov-2.html">SARS-CoV-2</a><a class="content-tag content-tag--travel-aware" href="../tags/travel-aware.html">travel-aware</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--sars-cov-2" href="../tags/sars-cov-2.html">sars cov 2</a></div>
        </div>
      </div>
    </div>
@@ -392,7 +392,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="wumv-6-map-tree.html">map tree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--geography" href="../tags/geography.html">geography</a><a class="content-tag content-tag--wumv-6" href="../tags/wumv-6.html">WuMV-6</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--geography" href="../tags/geography.html">geography</a><a class="content-tag content-tag--wumv-6" href="../tags/wumv-6.html">wumv 6</a><a class="content-tag content-tag--reassortment" href="../tags/reassortment.html">reassortment</a><a class="content-tag content-tag--map" href="../tags/map.html">map</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -402,7 +402,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="wumv-6-reassortment-network.html">reassortment network</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--reassortment" href="../tags/reassortment.html">reassortment</a><a class="content-tag content-tag--wumv-6" href="../tags/wumv-6.html">WuMV-6</a><a class="content-tag content-tag--reassortment-network" href="../tags/reassortment-network.html">reassortment network</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--reassortment" href="../tags/reassortment.html">reassortment</a><a class="content-tag content-tag--wumv-6" href="../tags/wumv-6.html">wumv 6</a><a class="content-tag content-tag--network" href="../tags/network.html">network</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -412,7 +412,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="wumv-6-simple-tree.html">simple tree</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--wumv-6" href="../tags/wumv-6.html">WuMV-6</a><a class="content-tag content-tag--basic" href="../tags/basic.html">basic</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--wumv-6" href="../tags/wumv-6.html">wumv 6</a><a class="content-tag content-tag--basic" href="../tags/basic.html">basic</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -422,7 +422,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="wumv-6-tangled-chain.html">tangled chain</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--reassortment" href="../tags/reassortment.html">reassortment</a><a class="content-tag content-tag--wumv-6" href="../tags/wumv-6.html">WuMV-6</a><a class="content-tag content-tag--tanglegram" href="../tags/tanglegram.html">tanglegram</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--reassortment" href="../tags/reassortment.html">reassortment</a><a class="content-tag content-tag--wumv-6" href="../tags/wumv-6.html">wumv 6</a><a class="content-tag content-tag--tanglegram" href="../tags/tanglegram.html">tanglegram</a></div>
        </div>
      </div>
    </div><div class="gallery-card">
@@ -432,7 +432,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="wumv-6-tree-matrix.html">tree matrix</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--reassortment" href="../tags/reassortment.html">reassortment</a><a class="content-tag content-tag--wumv-6" href="../tags/wumv-6.html">WuMV-6</a><a class="content-tag content-tag--matrix" href="../tags/matrix.html">matrix</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--reassortment" href="../tags/reassortment.html">reassortment</a><a class="content-tag content-tag--wumv-6" href="../tags/wumv-6.html">wumv 6</a><a class="content-tag content-tag--matrix" href="../tags/matrix.html">matrix</a></div>
        </div>
      </div>
    </div>
@@ -448,7 +448,7 @@ Each section groups examples by dataset/topic.
            </a>
        <div class="gallery-card__overlay">
                <a class="gallery-card__title" href="zika-virus-root-to-tip.html">root to tip</a>
-               <div class="gallery-card__tags"><a class="content-tag content-tag--root-to-tip" href="../tags/root-to-tip.html">root-to-tip</a><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time-scaled</a><a class="content-tag content-tag--zika-virus" href="../tags/zika-virus.html">Zika virus</a><a class="content-tag content-tag--scale-bar" href="../tags/scale-bar.html">scale bar</a></div>
+               <div class="gallery-card__tags"><a class="content-tag content-tag--root-to-tip" href="../tags/root-to-tip.html">root to tip</a><a class="content-tag content-tag--time-scaled" href="../tags/time-scaled.html">time scaled</a><a class="content-tag content-tag--zika" href="../tags/zika.html">zika</a><a class="content-tag content-tag--traversal" href="../tags/traversal.html">traversal</a></div>
        </div>
      </div>
    </div>
