@@ -79,6 +79,10 @@ SOURCE_DIR = Path(__file__).resolve().parent
 NEWS_DIR = SOURCE_DIR / "news"
 NEWS_DATE_PATTERN = re.compile(r"^\d{4}-\d{2}(?:-\d{2})?$")
 NEWS_TITLE_PATTERN = re.compile(r"^#\s+(.+?)\s*$")
+NEWS_MONTH_NAMES = (
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+)
 
 
 def load_news_entries():
@@ -116,9 +120,13 @@ def load_news_entries():
         except ValueError as error:
             raise ConfigError(f"{path}: {date_iso!r} is not a valid date") from error
 
-        if not path.name.startswith(f"{date_iso}-"):
+        filename_prefix = (
+            f"{published.year}-{NEWS_MONTH_NAMES[published.month - 1]}-"
+        )
+        if not path.name.startswith(filename_prefix):
             raise ConfigError(
-                f"{path}: filename must start with the article date ({date_iso}-)"
+                f"{path}: filename must start with the article year and month "
+                f"({filename_prefix})"
             )
 
         title = next(

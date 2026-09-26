@@ -74,10 +74,11 @@ YYYY-MM-DD format, followed by a level-one Markdown heading used as its title:
 
   Full article text goes here.
 
-The filename must start with the same date, followed by a stable description,
-for example 2026-09-26-article-title.md. The homepage automatically shows the
-three newest articles. The news archive and its page tree are defined in
-source/news/index.rst.
+The filename must start with the article year and three-letter English month,
+followed by a stable description, for example 2026-Sep-article-title.md. The
+full date remains in the front matter and determines homepage ordering. The
+homepage automatically shows the three newest articles. The news archive and
+its page tree are defined in source/news/index.rst.
 
 File: source/_templates/landing.html
 
