@@ -26,7 +26,7 @@ File: source/_templates/landing.html
   Lines 40-46   Main feature list
   Lines 48-55   "baltic is ideal for" text and list
   Lines 60-84   Quick-link names (Tutorials, Examples, As seen in)
-  Lines 88-109  News heading, dates, and news item text
+  News section  Generated list of the three newest source/news/*.md articles
   Lines 113-131 Versions & change log heading and resource paragraphs
   Lines 135-148 Support section, repository label, and Cite label
 
@@ -54,26 +54,41 @@ File: source/conf.py
   Line 17       Release/version shown by Sphinx where the theme uses it
   Line 54       Text shown in the site logo/header
 
-Important: the homepage currently has hard-coded release/news text too. If the
-release changes, also update source/_templates/landing.html lines 93-106 and,
-if needed, the "Versions & change log" section at lines 113-131.
+Release announcements and other news are maintained as Markdown files under
+source/news/. They are discovered automatically when Sphinx builds the site.
 
 
 3. NEWS, RELEASES, AND VERSION INFORMATION
 
+EDIT THESE SOURCE FILES:
+  source/news/*.md
+
+Each article must begin with front matter containing a date in YYYY-MM or
+YYYY-MM-DD format, followed by a level-one Markdown heading used as its title:
+
+  ---
+  date: 2026-09-26
+  ---
+
+  # Article title
+
+  Full article text goes here.
+
+The filename must start with the same date, followed by a stable description,
+for example 2026-09-26-article-title.md. The homepage automatically shows the
+three newest articles. The news archive and its page tree are defined in
+source/news/index.rst.
+
 File: source/_templates/landing.html
 
-  Lines 88-109  Entire News section
-  Lines 93-96   Highlighted release date and release announcement
-  Lines 98-106  Older news dates and descriptions
-  Lines 113-131 Versions & change log / resource section
+  News section  Controls the generated homepage markup, not article text
+  Resources section  Versions & change log / resource text
 
 File: source/conf.py
 
   Line 17       Sphinx release/version value
-
-There is no separate news database or changelog page in this project at the
-time this guide was created. These homepage entries are hard-coded HTML.
+  load_news_entries() validates, sorts, and exposes the Markdown articles to
+  the homepage template. Do not populate news_entries by hand.
 
 
 4. EXAMPLES LANDING PAGE DESCRIPTION
@@ -240,6 +255,7 @@ source/
   baltic-examples/                Original example code, data, images, README text
   baltic-tutorials/               Original tutorial code and images
   baltic-uses/baltic-uses.bib     Original "As seen in" publication records
+  news/                           Editable Markdown news articles and archive
 
   examples/                       Generated Examples .rst pages; do not hand-edit
   tutorials/                      Generated Tutorials .rst pages; do not hand-edit
@@ -288,6 +304,9 @@ AFTER EDITING
 
 Homepage/conf.py text:
   Rebuild the Sphinx site.
+
+News articles:
+  Add or edit a Markdown file under source/news/, then rebuild Sphinx.
 
 Examples description, source items, or tags:
   Run the examples generator, then the tags generator, then rebuild Sphinx.

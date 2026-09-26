@@ -9,3 +9,4 @@ baltic
    tutorials/index
    tags/index
    uses/index
+   news/index

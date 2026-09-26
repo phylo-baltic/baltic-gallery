@@ -90,21 +90,14 @@
   <div class="news__items">
     <h3>News</h3>
 
-    <div class="news__item--highlight">
-      <h5 class="date">Dec 2024</h5>
-      <p>baltic 1.0.0 released — major improvements to performance and visualization.</p>
+    {% for entry in news_entries[:3] %}
+    <div class="{{ 'news__item--highlight' if loop.first else 'news__item' }}">
+      <h5 class="date"><time datetime="{{ entry.date_iso }}">{{ entry.date_display }}</time></h5>
+      <p><a href="{{ pathto(entry.docname) }}">{{ entry.title|e }}</a></p>
     </div>
-
-    <div class="news__item">
-      <h5 class="date">Aug 2024</h5>
-      <p>New tutorials added: temporal phylogenies and trait mapping.</p>
-    </div>
-
-    <div class="news__item">
-      <h5 class="date">May 2024</h5>
-      <p>Integration with new Nextstrain JSON spec.</p>
-    </div>
-
+    {% else %}
+    <p>No news has been published yet.</p>
+    {% endfor %}
   </div>
 </section>
 
