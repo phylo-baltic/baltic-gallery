@@ -2,12 +2,12 @@
   "schema_version": 1,
   "taxonomy": {
     "tags": [
-      "phylogeny","basic", "colour", 
+      "phylogeny", "basic", "colour", 
       "time-scaled", "geography", "traits", "reassortment", "nextstrain",
       "Ebola virus", "Influenza B virus", "MERS-CoV", "SARS-CoV-2", "WuMV-6", "Zika virus", "Rabies virus",
       "exploded tree", "height bars", "state-collapsed", "collapsed branch", "TMRCA", "tanglegram",
       "matrix", "gradient clade", "homoplasy", "pad nodes", "reduced tree", "skygrid",
-      "Auspice JSON", "Measles virus", "piechart", "Nipah virus", "connectors",
+      "Auspice JSON", "Measles virus", "Nipah virus", "connectors",
       "Muller", "SNP alignment", "reassortment network", "root-to-tip", "circular",
       "collapsed clade", "TMRCA", "inverted", "reroot", "sort", "subtree", "text", "scale bar", 
       "posterior processing", "trait proportions", "travel-aware", "IO"
