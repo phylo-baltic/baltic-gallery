@@ -13,13 +13,11 @@ from pybtex.style.formatting.unsrt import Style as UnsrtStyle
 from pybtex.style.formatting.unsrt import pages
 from pybtex.style.template import (
     field,
-    first_of,
     href,
     join,
     optional,
     sentence,
     tag,
-    words,
 )
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -103,18 +101,31 @@ class WebsiteStyle(UnsrtStyle):
         return Text()
 
     def get_article_template(self, entry: Entry):
-        volume_and_pages = first_of[
-            optional[
-                join[field("volume"), optional["(", field("number"), ")"], ":", pages]
-            ],
-            optional[words["pages", pages]],
-        ]
+        has_volume = bool(entry.fields.get("volume"))
+        has_number = bool(entry.fields.get("number"))
+        has_pages = bool(entry.fields.get("pages"))
+
+        publication_details = None
+        if has_volume:
+            publication_details = join[
+                field("volume"), optional["(", field("number"), ")"]
+            ]
+        elif has_number:
+            publication_details = join["(", field("number"), ")"]
+
+        if has_pages:
+            publication_details = (
+                join[publication_details, ":", pages]
+                if publication_details is not None
+                else pages
+            )
+
         return toplevel[
             self.format_names("author"),
             self.format_title(entry, "title"),
             sentence[
                 tag("em")[field("journal")],
-                optional[volume_and_pages],
+                optional[publication_details] if publication_details is not None else "",
                 field("year"),
             ],
         ]
