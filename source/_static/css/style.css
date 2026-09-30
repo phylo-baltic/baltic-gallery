@@ -506,3 +506,7 @@ html[data-theme="dark"] .news__item--highlight {
 html[data-theme="dark"] .baltic-gallery-thumb {
   background: #1e1e1e;
 }
+
+.citation-author {
+  white-space: nowrap;
+}
