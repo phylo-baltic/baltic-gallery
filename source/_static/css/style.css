@@ -282,6 +282,32 @@ p, li {
   border-left: 3px solid #ccc;
 }
 
+.news__headline,
+.news-list__headline {
+  margin: 0;
+}
+
+.news__date,
+.news-list__date,
+.news-article-date {
+  color: var(--pst-color-text-muted);
+  font-size: 0.9em;
+}
+
+.news__date {
+  margin-left: 0.5em;
+  white-space: nowrap;
+}
+
+.news-list__entry:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.news-article-date {
+  margin-top: -0.75rem;
+  margin-bottom: 2rem;
+}
+
 /* ------------------------------------------
    CALLOUT BOXES (Resources & Support)
 -------------------------------------------*/

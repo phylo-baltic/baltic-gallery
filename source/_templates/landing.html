@@ -92,8 +92,10 @@
 
     {% for entry in news_entries[:3] %}
     <div class="{{ 'news__item--highlight' if loop.first else 'news__item' }}">
-      <h5 class="date"><time datetime="{{ entry.date_iso }}">{{ entry.date_display }}</time></h5>
-      <p><a href="{{ pathto(entry.docname) }}">{{ entry.title|e }}</a></p>
+      <p class="news__headline">
+        <a href="{{ pathto(entry.docname) }}">{{ entry.title|e }}</a>
+        <time class="news__date" datetime="{{ entry.date_iso }}">{{ entry.date_display }}</time>
+      </p>
     </div>
     {% else %}
     <p>No news has been published yet.</p>

@@ -4,7 +4,9 @@ from datetime import date
 from pathlib import Path
 import re
 
+from docutils import nodes
 from sphinx.errors import ConfigError
+from sphinx.util.docutils import SphinxDirective
 
 # -- Image import path
 
@@ -155,10 +157,81 @@ def load_news_entries():
     return entries
 
 
+NEWS_ENTRIES = load_news_entries()
+NEWS_ENTRIES_BY_DOCNAME = {
+    entry["docname"]: entry for entry in NEWS_ENTRIES
+}
+
+
+class NewsListDirective(SphinxDirective):
+    """Render the news index from the same metadata used by the landing page."""
+
+    has_content = False
+
+    def run(self):
+        listing = nodes.container(classes=["news-list"])
+
+        if not NEWS_ENTRIES:
+            listing += nodes.paragraph(text="No news has been published yet.")
+            return [listing]
+
+        for entry in NEWS_ENTRIES:
+            item = nodes.container(classes=["news-list__entry"])
+            headline = nodes.paragraph(classes=["news-list__headline"])
+            link = nodes.reference(
+                "",
+                entry["title"],
+                refuri=self.env.app.builder.get_relative_uri(
+                    self.env.docname, entry["docname"]
+                ),
+                internal=True,
+            )
+            headline += link
+            headline += nodes.Text(" — ")
+            headline += nodes.inline(
+                "", entry["date_display"], classes=["news-list__date"]
+            )
+            item += headline
+            listing += item
+
+        return [listing]
+
+
+def add_news_article_date(app, docname, source):
+    """Add a visible publication date below each news article title."""
+    entry = NEWS_ENTRIES_BY_DOCNAME.get(docname)
+    if entry is None:
+        return
+
+    lines = source[0].splitlines()
+    front_matter_end = next(
+        index for index, line in enumerate(lines[1:], start=1)
+        if line.strip() == "---"
+    )
+    title_index = next(
+        index
+        for index, line in enumerate(
+            lines[front_matter_end + 1:], start=front_matter_end + 1
+        )
+        if NEWS_TITLE_PATTERN.fullmatch(line.strip())
+    )
+    published = (
+        f'<p class="news-article-date">Published '
+        f'<time datetime="{entry["date_iso"]}">{entry["date_display"]}</time></p>'
+    )
+    lines[title_index + 1:title_index + 1] = ["", published]
+    source[0] = "\n".join(lines)
+
+
 html_context = {
-    "news_entries": load_news_entries(),
+    "news_entries": NEWS_ENTRIES,
 }
 
 html_additional_pages = {
     "index": "index.html",
 }
+
+
+def setup(app):
+    app.add_directive("news-list", NewsListDirective)
+    app.connect("source-read", add_news_article_date)
