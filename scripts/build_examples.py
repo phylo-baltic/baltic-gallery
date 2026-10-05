@@ -8,7 +8,7 @@ import shutil
 from dataclasses import dataclass
 from pathlib import Path
 
-from content_metadata import load_metadata, tag_chips, tags_for
+from content_metadata import landing_categories, load_metadata, tag_chips, tags_for
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -139,8 +139,7 @@ def unique_doc_slug(base_slug: str, used: set[str]) -> str:
 
 @dataclass
 class ExampleItem:
-    category_name: str
-    category_slug: str
+    source_category: str
     relative_parent: Path
     example_name: str
     example_slug: str
@@ -153,11 +152,9 @@ class ExampleItem:
     tags: list[str]
 
 
-def collect_items() -> tuple[list[ExampleItem], dict[str, list[ExampleItem]]]:
+def collect_items(metadata: dict) -> list[ExampleItem]:
     items: list[ExampleItem] = []
-    by_cat: dict[str, list[ExampleItem]] = {}
     used_doc_slugs: set[str] = set()
-    metadata = load_metadata("examples")
 
     if not EXAMPLES_SRC.exists():
         raise SystemExit(f"Missing input folder: {EXAMPLES_SRC}")
@@ -173,8 +170,7 @@ def collect_items() -> tuple[list[ExampleItem], dict[str, list[ExampleItem]]]:
     for source in sources:
         rel = source.relative_to(EXAMPLES_SRC)
         relative_parent = rel.parent
-        category_name = rel.parts[0] if len(rel.parts) > 1 else "Examples"
-        category_slug = slugify(category_name)
+        source_category = rel.parts[0] if len(rel.parts) > 1 else "Examples"
         example_name = source.stem
         example_slug = slugify(example_name)
 
@@ -186,8 +182,7 @@ def collect_items() -> tuple[list[ExampleItem], dict[str, list[ExampleItem]]]:
         source_web = copy_static_file(source, relative_parent)
 
         it = ExampleItem(
-            category_name=category_name,
-            category_slug=category_slug,
+            source_category=source_category,
             relative_parent=relative_parent,
             example_name=example_name,
             example_slug=example_slug,
@@ -197,16 +192,53 @@ def collect_items() -> tuple[list[ExampleItem], dict[str, list[ExampleItem]]]:
             rst_doc=doc_slug,
             html_href=f"{doc_slug}.html",
             source_path=source,
-            tags=tags_for(metadata, rel.as_posix(), category_name),
+            tags=tags_for(metadata, rel.as_posix(), source_category),
         )
         items.append(it)
-        by_cat.setdefault(category_slug, []).append(it)
 
-    # stable ordering
-    for k in by_cat:
-        by_cat[k].sort(key=lambda x: x.source_path.relative_to(EXAMPLES_SRC).as_posix().lower())
+    return items
 
-    return items, by_cat
+
+def group_items_by_category(
+    items: list[ExampleItem], categories: list[dict]
+) -> list[tuple[dict, list[ExampleItem]]]:
+    sections: list[tuple[dict, list[ExampleItem]]] = []
+    covered_docs: set[str] = set()
+
+    for category in categories:
+        category_tags = {slugify(tag) for tag in category["tags"]}
+        matches = [
+            item
+            for item in items
+            if category_tags.intersection(slugify(tag) for tag in item.tags)
+        ]
+        matches.sort(
+            key=lambda item: (
+                title_from_stem(item.example_name).casefold(),
+                item.source_path.relative_to(EXAMPLES_SRC).as_posix().casefold(),
+            )
+        )
+        if not matches:
+            raise SystemExit(
+                f"Landing category {category['title']!r} does not match any examples"
+            )
+
+        covered_docs.update(item.rst_doc for item in matches)
+        sections.append((category, matches))
+
+    uncovered = [
+        item.source_path.relative_to(EXAMPLES_SRC).as_posix()
+        for item in items
+        if item.rst_doc not in covered_docs
+    ]
+    if uncovered:
+        paths = "\n".join(f"- {path}" for path in uncovered)
+        raise SystemExit(
+            "Examples missing from all landing categories; add a matching "
+            f"application tag rule:\n{paths}"
+        )
+
+    return sections
 
 
 def write_example_page(item: ExampleItem) -> None:
@@ -246,21 +278,21 @@ Code
     (EXAMPLES_DOCS / f"{item.rst_doc}.rst").write_text(rst, encoding="utf-8")
 
 
-def write_examples_landing(by_cat: dict[str, list[ExampleItem]], items: list[ExampleItem]) -> None:
+def write_examples_landing(
+    sections: list[tuple[dict, list[ExampleItem]]], items: list[ExampleItem]
+) -> None:
     ensure_dir(EXAMPLES_DOCS)
 
     desc = ""
     if DESC_FILE.exists():
         desc = read_text(DESC_FILE)
 
-    # Build raw HTML sections per category
+    # Build raw HTML sections from application-focused, tag-based categories.
     sections_html: list[str] = []
-    for cat_slug in sorted(by_cat.keys()):
-        cat_items = by_cat[cat_slug]
-        cat_name = cat_items[0].category_name if cat_items else cat_slug
+    for category, category_items in sections:
 
         cards: list[str] = []
-        for it in cat_items:
+        for it in category_items:
             img = it.img_web or "_static/no_image.png"
             title = escape(title_from_stem(it.example_name))
             alt = escape(it.example_name, quote=True)
@@ -283,8 +315,8 @@ def write_examples_landing(by_cat: dict[str, list[ExampleItem]], items: list[Exa
             )
 
         section = f"""
-<section class="examples-section">
-  <h2 class="examples-section__title">{escape(cat_name)}</h2>
+<section id="{escape(category["slug"], quote=True)}" class="examples-section">
+  <h2 class="examples-section__title">{escape(category["title"])}</h2>
   <div class="gallery-grid">
     {''.join(cards)}
   </div>
@@ -293,15 +325,9 @@ def write_examples_landing(by_cat: dict[str, list[ExampleItem]], items: list[Exa
         sections_html.append(section)
 
     # Keep one hidden toctree for the landing page sidebar, as in tutorials.
-    # Category names remain visible in the gallery while every example stays
-    # directly available from the section navigation.
-    toc_entries: list[str] = []
-    for cat_slug in sorted(by_cat.keys()):
-        cat_items = by_cat[cat_slug]
-        if not cat_items:
-            continue
-
-        toc_entries.extend(f"   {it.rst_doc}" for it in cat_items)
+    # A card can occur in several visible categories, but each detail page must
+    # appear only once in the Sphinx navigation tree.
+    toc_entries = [f"   {item.rst_doc}" for item in items]
 
     toc_text = ""
     if toc_entries:
@@ -384,18 +410,20 @@ def main() -> None:
     ensure_dir(STATIC_EXAMPLES)
     clean_previous_outputs()
 
-    items, by_cat = collect_items()
+    metadata = load_metadata("examples")
+    items = collect_items(metadata)
+    sections = group_items_by_category(items, landing_categories(metadata))
 
     # write pages
     for it in items:
         write_example_page(it)
 
     # write landing page
-    write_examples_landing(by_cat, items)
+    write_examples_landing(sections, items)
     prune_stale_pages(items)
     write_manifest(items)
 
-    print(f"Generated {len(by_cat)} categories, {len(items)} example pages.")
+    print(f"Generated {len(sections)} categories, {len(items)} example pages.")
     print(f"- Landing: {EXAMPLES_DOCS / 'index.rst'}")
     print(f"- Static files: {STATIC_EXAMPLES}/<source-folder>/*")
 

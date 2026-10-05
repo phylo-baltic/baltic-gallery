@@ -1,2 +1,2 @@
 This page contains example analyses and visualizations built with baltic.
-Each section groups examples by dataset/topic.
+Sections group examples by application, and an example may appear in more than one section.

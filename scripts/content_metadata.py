@@ -56,6 +56,46 @@ def load_metadata(kind: str) -> dict:
     return section
 
 
+def landing_categories(section: dict) -> list[dict]:
+    raw_categories = section.get("landing_categories")
+    if not isinstance(raw_categories, list) or not raw_categories:
+        raise SystemExit("Metadata examples.landing_categories must be a non-empty list")
+
+    categories = []
+    seen_slugs = set()
+    for index, raw_category in enumerate(raw_categories, start=1):
+        if not isinstance(raw_category, dict):
+            raise SystemExit(f"Landing category {index} must be an object")
+
+        title = str(raw_category.get("title", "")).strip()
+        category_slug = slugify(title)
+        if not category_slug:
+            raise SystemExit(f"Landing category {index} must have a non-empty title")
+        if category_slug in seen_slugs:
+            raise SystemExit(f"Duplicate landing category slug {category_slug!r}")
+        seen_slugs.add(category_slug)
+
+        raw_tags = raw_category.get("tags")
+        if not isinstance(raw_tags, list) or not raw_tags:
+            raise SystemExit(f"Landing category {title!r} must have a non-empty tags list")
+
+        tags = []
+        for raw_tag in raw_tags:
+            tag_slug = slugify(str(raw_tag))
+            if not tag_slug or tag_slug not in section["tag_labels"]:
+                raise SystemExit(
+                    f"Unknown landing category tag {tag_slug!r} in {title!r}; "
+                    "add it to the taxonomy first"
+                )
+            tag_label = section["tag_labels"][tag_slug]
+            if tag_label not in tags:
+                tags.append(tag_label)
+
+        categories.append({"title": title, "slug": category_slug, "tags": tags})
+
+    return categories
+
+
 def tags_for(section: dict, source_key: str, category: str | None = None) -> list[str]:
     item_tags = section.get("items", {}).get(source_key)
     if item_tags is not None:

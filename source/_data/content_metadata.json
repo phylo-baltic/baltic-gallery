@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "taxonomy": {
     "tags": [
       "phylogeny", "basic", "colour", 
@@ -15,9 +15,51 @@
   },
   "examples": {
     "defaults": ["phylogeny"],
+    "landing_categories": [
+      {
+        "title": "Basic tree plotting",
+        "tags": ["basic", "colour"]
+      },
+      {
+        "title": "Exploded trees",
+        "tags": ["exploded tree"]
+      },
+      {
+        "title": "State-collapsed trees",
+        "tags": ["state-collapsed"]
+      },
+      {
+        "title": "Time and dating",
+        "tags": ["time-scaled", "TMRCA", "root-to-tip", "skygrid", "height bars"]
+      },
+      {
+        "title": "Trait and state visualisation",
+        "tags": ["traits", "gradient clade", "homoplasy"]
+      },
+      {
+        "title": "Geography and movement",
+        "tags": ["geography", "travel-aware"]
+      },
+      {
+        "title": "Tree comparison and reassortment",
+        "tags": ["tanglegram", "matrix", "reassortment", "reassortment network"]
+      },
+      {
+        "title": "Tree simplification and layout",
+        "tags": ["reduced tree", "pad nodes"]
+      },
+      {
+        "title": "Interoperability and post-processing",
+        "tags": ["nextstrain", "Auspice JSON", "IO", "connectors", "posterior processing"]
+      },
+      {
+        "title": "Sequence and population views",
+        "tags": ["SNP alignment", "Muller"]
+      }
+    ],
     "categories": {
-      "Ebola virus": ["Ebola virus"],
-      "Influenza B virus": ["Influenza B virus"],
+      "Ebola": ["Ebola virus"],
+      "Influenza-B-virus": ["Influenza B virus"],
       "MERS-CoV": ["MERS-CoV"],
       "nextstrain": ["nextstrain"],
       "samogitia": ["Ebola virus", "Rabies virus"],

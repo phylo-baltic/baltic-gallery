@@ -110,12 +110,18 @@ Generator:
 Individual example page titles are derived from filenames under:
   source/baltic-examples/**/*.py
 
-Example categories are derived from subfolder names under:
-  source/baltic-examples/
-
-Example tags are edited in:
+Example landing-page categories and tags are edited in:
   source/_data/content_metadata.json
-  Lines 15-68   Example defaults, categories, individual items, and tags
+
+The ordered examples.landing_categories list defines the visible application-
+focused sections. Each category lists one or more tags and includes every
+example matching any of them. An example can therefore appear in several
+sections while retaining a single detail page. The existing examples.categories
+object supplies fallback tags from source subfolder names; it does not control
+the landing-page sections.
+
+Every example must match at least one landing category. The examples generator
+reports uncovered source files rather than silently omitting them.
 
 
 5. TUTORIALS LANDING PAGE DESCRIPTION
@@ -182,7 +188,12 @@ generated title, then regenerate the pages.
 File: source/_data/content_metadata.json
 
   Lines 2-13    Allowed tag taxonomy
-  Lines 15-68   Example categories and tags
+  examples.landing_categories
+                Ordered application-focused sections, matched by tag
+  examples.categories
+                Fallback tags inherited from source subfolders
+  examples.items
+                Tags assigned to individual examples
   Lines 70-94   Tutorial categories and tags
 
 Generated tag pages (do not edit directly):
