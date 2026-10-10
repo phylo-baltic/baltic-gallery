@@ -102,7 +102,7 @@
       "WuMV-6/reassortment-network.py": ["reassortment", "WuMV-6", "reassortment network"],
       "WuMV-6/simple-tree.py": ["WuMV-6", "basic"],
       "WuMV-6/tangled-chain.py": ["reassortment", "WuMV-6", "tanglegram"],
-      "WuMV-6/tree-matrix.py": ["reassortment", "WuMV-6", "matrix"],
+      "WuMV-6/tree-matrix.py": ["WuMV-6", "matrix"],
       "Zika-virus/root-to-tip.py": ["root-to-tip", "time-scaled", "Zika virus", "scale bar"]
     }
   },
