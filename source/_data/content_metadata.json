@@ -21,40 +21,36 @@
         "tags": ["basic", "colour"]
       },
       {
-        "title": "Exploded trees",
-        "tags": ["exploded tree"]
-      },
-      {
-        "title": "State-collapsed trees",
-        "tags": ["state-collapsed"]
+        "title": "Tree manipulation",
+        "tags": ["exploded tree", "state-collapsed", "reduced tree"]
       },
       {
         "title": "Time and dating",
-        "tags": ["time-scaled", "TMRCA", "root-to-tip", "skygrid", "height bars"]
+        "tags": ["TMRCA", "root-to-tip", "height bars"]
       },
       {
-        "title": "Trait and state visualisation",
-        "tags": ["traits", "gradient clade", "homoplasy"]
+        "title": "Geography",
+        "tags": ["geography"]
       },
       {
-        "title": "Geography and movement",
-        "tags": ["geography", "travel-aware"]
+        "title": "Reticulate evolution",
+        "tags": ["tanglegram", "reassortment", "reassortment network"]
       },
       {
-        "title": "Tree comparison and reassortment",
-        "tags": ["tanglegram", "matrix", "reassortment", "reassortment network"]
+        "title": "Nextstrain",
+        "tags": ["nextstrain"]
       },
       {
-        "title": "Tree simplification and layout",
-        "tags": ["reduced tree", "pad nodes"]
+        "title": "Special visualisations",
+        "tags": ["SNP alignment", "Muller", "skygrid", "gradient clade", "travel-aware"]
       },
       {
-        "title": "Interoperability and post-processing",
-        "tags": ["nextstrain", "Auspice JSON", "IO", "connectors", "posterior processing"]
+        "title": "Utilities",
+        "tags": ["pad nodes", "posterior processing", "matrix", "Auspice JSON"]
       },
       {
-        "title": "Sequence and population views",
-        "tags": ["SNP alignment", "Muller"]
+        "title": "Custom visualisations",
+        "tags": ["homoplasy"]
       }
     ],
     "categories": {
