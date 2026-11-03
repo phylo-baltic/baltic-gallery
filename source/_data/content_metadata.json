@@ -129,7 +129,7 @@
       "MERS-CoV/skygrid-relative-time.py": "Skygrid estimate of effective population size on a time-before-present axis.",
       "MERS-CoV/state-collapsed-tree-earliest-adjust.py": "State-collapsed tree keeping the earliest branch of each lineage, extended to its last descendant and shaded by trait probability.",
       "MERS-CoV/state-collapsed-tree.py": "Collapses clades that share a trait state into single tips, shaded by trait probability.",
-      "nextstrain/auspice-json-io.py": "Exports a tree to Auspice JSON, reads it back in and plots it.",
+      "nextstrain/auspice-json-io.py": "Exports a tree to Auspice JSON for viewing on auspice.us, and reads it back in.",
       "nextstrain/nextstrain-avian-flu-tanglegram.py": "Tangled chain of trees loaded from Nextstrain Auspice JSON files.",
       "nextstrain/nextstrain-flu-lineage-map.py": "Tree of lineages next to a world map with pie charts of lineage frequencies in each location.",
       "nextstrain/nextstrain-measles-map-piecharts.py": "Nextstrain tree coloured by clade next to a world map with pie charts of clade frequencies in each location.",
