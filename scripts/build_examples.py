@@ -8,7 +8,7 @@ import shutil
 from dataclasses import dataclass
 from pathlib import Path
 
-from content_metadata import landing_categories, load_metadata, tag_chips, tags_for
+from content_metadata import description_for, landing_categories, load_metadata, tag_chips, tags_for
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -150,6 +150,7 @@ class ExampleItem:
     html_href: str               # <cat>/<example>.html
     source_path: Path
     tags: list[str]
+    description: str             # short text shown on card hover
 
 
 def collect_items(metadata: dict) -> list[ExampleItem]:
@@ -193,6 +194,7 @@ def collect_items(metadata: dict) -> list[ExampleItem]:
             html_href=f"{doc_slug}.html",
             source_path=source,
             tags=tags_for(metadata, rel.as_posix(), source_category),
+            description=description_for(metadata, rel.as_posix()),
         )
         items.append(it)
 
@@ -298,6 +300,7 @@ def write_examples_landing(
             alt = escape(it.example_name, quote=True)
             href = escape(it.html_href, quote=True)
             src = escape(html_src(img), quote=True)
+            desc_html = f'\n            <p class="gallery-card__desc">{escape(it.description)}</p>' if it.description else ""
             cards.append(
                 f"""
 <div class="gallery-card">
@@ -306,7 +309,7 @@ def write_examples_landing(
             <img src="{src}" alt="{alt}" loading="lazy">
         </a>
     <div class="gallery-card__overlay">
-            <a class="gallery-card__title" href="{href}">{title}</a>
+            <a class="gallery-card__title" href="{href}">{title}</a>{desc_html}
             <div class="gallery-card__tags">{tag_chips(it.tags)}</div>
     </div>
   </div>
@@ -386,7 +389,7 @@ def write_manifest(items: list[ExampleItem]) -> None:
     metadata_path = EXAMPLES_DOCS / ".content_items.json"
     metadata_path.write_text(
         json.dumps(
-            [{"title": title_from_stem(item.example_name), "href": item.html_href, "image": item.img_web, "tags": item.tags, "type": "example"} for item in items],
+            [{"title": title_from_stem(item.example_name), "href": item.html_href, "image": item.img_web, "tags": item.tags, "description": item.description, "type": "example"} for item in items],
             indent=2,
         )
         + "\n",
@@ -422,6 +425,11 @@ def main() -> None:
     write_examples_landing(sections, items)
     prune_stale_pages(items)
     write_manifest(items)
+
+    missing = [item.source_path.relative_to(EXAMPLES_SRC).as_posix() for item in items if not item.description]
+    if missing:
+        print("Warning: examples without a description in content_metadata.json:")
+        print("\n".join(f"- {path}" for path in missing))
 
     print(f"Generated {len(sections)} categories, {len(items)} example pages.")
     print(f"- Landing: {EXAMPLES_DOCS / 'index.rst'}")

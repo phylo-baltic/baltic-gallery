@@ -164,11 +164,15 @@ Generator:
 
 7. INDIVIDUAL EXAMPLE AND TUTORIAL CONTENT
 
-Original example code and its comments:
-  source/baltic-examples/**/*.py
+Example and tutorial code is maintained upstream and copied in by
+scripts/sync_upstream_content.py, which replaces these folders on every
+deploy. Edit the upstream repositories, not the local copies:
+  https://github.com/phylo-baltic/baltic-examples   -> source/baltic-examples/
+  https://github.com/evogytis/baltic                -> source/baltic-tutorials/
 
-Original tutorial code and its comments:
-  source/baltic-tutorials/*.py
+The short description shown on each gallery card is edited in:
+  source/_data/content_metadata.json
+  examples.descriptions / tutorials.descriptions, keyed like the tags in items
 
 Generated detail pages (do not edit directly):
   source/examples/*.rst
@@ -264,8 +268,8 @@ source/
     tutorials_description.txt     Editable Tutorials landing description
     content_metadata.json         Example/tutorial tags and categories
 
-  baltic-examples/                Original example code, data, images, README text
-  baltic-tutorials/               Original tutorial code and images
+  baltic-examples/                Synced copy of upstream example code and images
+  baltic-tutorials/               Synced copy of upstream tutorial code and images
   baltic-uses/baltic-uses.bib     Original "As seen in" publication records
   news/                           Editable Markdown news articles and archive
 
@@ -328,6 +332,27 @@ Tutorials description, source items, or tags:
 
 Publication records:
   Run the uses generator, then rebuild Sphinx.
+
+
+GIT AND DEPLOYMENT
+------------------
+
+Every push to main runs .github/workflows/pages.yml, which syncs upstream
+content, runs all build scripts (examples, tutorials, tags, rotator, uses) and
+builds Sphinx. Only the source inputs are committed; everything the workflow
+regenerates is listed in .gitignore:
+
+  build/, source/baltic-examples/, source/baltic-tutorials/,
+  source/examples/, source/tutorials/, source/tags/, source/uses/,
+  source/_static/examples/, source/_static/tutorials/,
+  source/_static/rotator-images.js
+
+To build locally from a fresh clone, first run:
+
+  python scripts/sync_upstream_content.py
+
+which fetches upstream content and runs the page generators, then run
+build_rotator_assets.py and rebuild Sphinx.
 
 Line numbers in this guide describe the files as they existed when this guide
 was created. They may shift after edits; search for the nearby heading or text

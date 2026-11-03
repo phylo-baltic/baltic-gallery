@@ -30,6 +30,8 @@ def clean_previous_outputs() -> None:
 
 def card(item: dict) -> str:
     image = item.get("image") or "_static/no_image.png"
+    description = item.get("description")
+    desc_html = f'\n      <p class="gallery-card__desc">{escape(description)}</p>' if description else ""
     return f'''
 <div class="gallery-card">
   <div class="gallery-card__imgwrap">
@@ -37,7 +39,7 @@ def card(item: dict) -> str:
             <img src="../{escape(image, quote=True)}" alt="{escape(item["title"], quote=True)}" loading="lazy">
         </a>
     <div class="gallery-card__overlay">
-      <a class="gallery-card__title" href="{escape(item["href"], quote=True)}">{escape(item["title"])}</a>
+      <a class="gallery-card__title" href="{escape(item["href"], quote=True)}">{escape(item["title"])}</a>{desc_html}
     </div>
   </div>
 </div>

@@ -2,3 +2,21 @@ README_planning.txt
 *zip
 *gz
 .cache/
+
+CLAUDE_LOG.md
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Regenerated on every deploy by .github/workflows/pages.yml
+build/
+source/baltic-examples/
+source/baltic-tutorials/
+source/examples/
+source/tutorials/
+source/tags/
+source/uses/
+source/_static/examples/
+source/_static/tutorials/
+source/_static/rotator-images.js

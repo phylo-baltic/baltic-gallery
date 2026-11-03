@@ -118,6 +118,7 @@ def copy_flat_tutorial_files(source_dir: Path, dest_dir: Path) -> None:
 def run_builders() -> None:
     run([sys.executable, "scripts/build_examples.py"], cwd=PROJECT_ROOT)
     run([sys.executable, "scripts/build_tutorials.py"], cwd=PROJECT_ROOT)
+    run([sys.executable, "scripts/build_tags.py"], cwd=PROJECT_ROOT)
     run([sys.executable, "scripts/build_uses.py"], cwd=PROJECT_ROOT)
 
 

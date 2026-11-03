@@ -116,6 +116,13 @@ def tags_for(section: dict, source_key: str, category: str | None = None) -> lis
     return result
 
 
+def description_for(section: dict, source_key: str) -> str:
+    description = section.get("descriptions", {}).get(source_key, "")
+    if not isinstance(description, str):
+        raise SystemExit(f"Description for {source_key!r} must be a string")
+    return description.strip()
+
+
 def tag_chips(tags: list[str], href_prefix: str = "../tags/") -> str:
     return "".join(
         f'<a class="content-tag content-tag--{slugify(tag)}" href="{href_prefix}{slugify(tag)}.html">{escape(tag)}</a>'

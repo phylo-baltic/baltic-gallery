@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from html import escape
 from pathlib import Path
 
-from content_metadata import load_metadata, tag_chips, tags_for
+from content_metadata import description_for, load_metadata, tag_chips, tags_for
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -161,6 +161,7 @@ class TutorialItem:
     html_href: str
     source_path: Path
     tags: list[str]
+    description: str             # short text shown on card hover
 
 
 def collect_items() -> list[TutorialItem]:
@@ -195,6 +196,7 @@ def collect_items() -> list[TutorialItem]:
                 html_href=f"{doc_slug}.html",
                 source_path=source,
                 tags=tags_for(metadata, source.name),
+                description=description_for(metadata, source.name),
             )
         )
 
@@ -245,6 +247,7 @@ def write_tutorials_landing(items: list[TutorialItem]) -> None:
     cards: list[str] = []
     for item in items:
         img = item.img_web or "_static/no_image.png"
+        desc_html = f'\n            <p class="gallery-card__desc">{escape(item.description)}</p>' if item.description else ""
         cards.append(
             f"""
 <div class="gallery-card">
@@ -253,7 +256,7 @@ def write_tutorials_landing(items: list[TutorialItem]) -> None:
             <img src="{escape(html_src(img), quote=True)}" alt="{escape(item.source_name, quote=True)}" loading="lazy">
         </a>
     <div class="gallery-card__overlay">
-            <a class="gallery-card__title" href="{escape(item.html_href, quote=True)}">{escape(item.title)}</a>
+            <a class="gallery-card__title" href="{escape(item.html_href, quote=True)}">{escape(item.title)}</a>{desc_html}
             <div class="gallery-card__tags">{tag_chips(item.tags)}</div>
     </div>
   </div>
@@ -326,7 +329,7 @@ def write_manifest(items: list[TutorialItem]) -> None:
     metadata_path = TUTORIALS_DOCS / ".content_items.json"
     metadata_path.write_text(
         json.dumps(
-            [{"title": item.title, "href": item.html_href, "image": item.img_web, "tags": item.tags, "type": "tutorial"} for item in items],
+            [{"title": item.title, "href": item.html_href, "image": item.img_web, "tags": item.tags, "description": item.description, "type": "tutorial"} for item in items],
             indent=2,
         )
         + "\n",
@@ -357,6 +360,11 @@ def main() -> None:
     write_tutorials_landing(items)
     prune_stale_pages(items)
     write_manifest(items)
+
+    missing = [item.source_path.name for item in items if not item.description]
+    if missing:
+        print("Warning: tutorials without a description in content_metadata.json:")
+        print("\n".join(f"- {name}" for name in missing))
 
     print(f"Generated {len(items)} tutorial pages.")
     print(f"- Landing: {TUTORIALS_DOCS / 'index.rst'}")
